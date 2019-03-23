@@ -35,7 +35,7 @@ class Main extends Component {
             <a href="/">
               <img className="branding__logo" src="/dist/images/logo.png" />
             </a>
-            <h1 className="page-title">Pool 2019 - Hi Sean b</h1>
+            <h1 className="page-title">Pool 2019</h1>
             <nav className="main-nav" style={{display: 'flex', alignItems: 'center'}}>
               <a href="#rosters">Rosters</a>
               <a href="#draft">Draft Board</a>
