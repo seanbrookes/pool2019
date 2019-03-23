@@ -1,0 +1,89 @@
+<form id="FormEditRosterPlayer" class="forms columnar">
+  <div>
+    <!-- roster -->
+    <label >Roster:</label>
+    <select id="RosterSelect" ng-model="newPlayerCtx.slug" class="roster-select">
+      <option value="bashers">bashers</option>
+      <option value="mashers">mashers</option>
+      <option value="rallycaps">rallycaps</option>
+      <option value="stallions">stallions</option>
+    </select>
+  </div>
+  <div>
+    <!-- player name -->
+    <label for="PlayerNameInput">Player</label>
+    <input type="text" id="PlayerNameInput" ng-model="newPlayerCtx.name" class="input-player-name" value="">
+  </div>
+  <div>
+    <!-- pos -->
+    <label for="PosSelect">Pos</label>
+    <select id="PosSelect" class="select-pos pick-property-edit" ng-model="newPlayerCtx.pos"  data-type="pos">
+      <option value="C">C</option>
+      <option value="1B">1B</option>
+      <option value="2B">2B</option>
+      <option value="3B">3B</option>
+      <option value="SS">SS</option>
+      <option value="LF">LF</option>
+      <option value="CF">CF</option>
+      <option value="RF">RF</option>
+      <option value="DH">DH</option>
+      <option value="SP">SP</option>
+      <option value="RP">RP</option>
+    </select>
+  </div>
+  <div>
+    <!-- team -->
+    <label for="TeamSelect">Team</label>
+    <select class="select-team pick-property-edit" id="TeamSelect" ng-model="newPlayerCtx.team" data-type="team">
+      <option value="BAL">BAL</option>
+      <option value="BOS">BOS</option>
+      <option value="CHA">CHA</option>
+      <option value="CLE">CLE</option>
+      <option value="DET">DET</option>
+      <option value="HOU">HOU</option>
+      <option value="KC">KC</option>
+      <option value="LAA">LAA</option>
+      <option value="MIN">MIN</option>
+      <option value="NYY">NYY</option>
+      <option value="OAK">OAK</option>
+      <option value="SEA">SEA</option>
+      <option value="TB">TB</option>
+      <option value="TEX">TEX</option>
+      <option value="TOR">TOR</option>
+    </select>
+  </div>
+  <!--<div>-->
+    <!--<label for="DraftStatusSelect">Roster Status</label>-->
+    <!--<select id="DraftStatusSelect" ng-model="currentEditRoster.editPlayer.draftStatus" class="status-select">-->
+      <!--<option value="bubble">bubble</option>-->
+      <!--<option value="dropped">dropped</option>-->
+      <!--<option value="prospect">prospect</option>-->
+      <!--<option value="protected">protected</option>-->
+      <!--<option value="roster">roster</option>-->
+    <!--</select>-->
+  <!--</div>-->
+  <div>
+    <!--<label for="PlayerStatusSelect">Status</label>-->
+    <!--<select id="PlayerStatusSelect" ng-model="currentEditRoster.editPlayer.status" class="status-select">-->
+      <!--<option value="dl">dl</option>-->
+      <!--<option value="nl">nl</option>-->
+      <!--<option value="bubble">bubble</option>-->
+      <!--<option value="dropped">dropped</option>-->
+      <!--<option value="protected">protected</option>-->
+      <!--<option value="roster">roster</option>-->
+      <!--<option value="prospect">prospect</option>-->
+      <!--<option value="regular">regular</option>-->
+    <!--</select>-->
+  </div>
+  <div>
+    <label for="PosTypeSelect">Position Type</label>
+    <select id="PosTypeSelect" ng-model="newPlayerCtx.posType" class="status-select">
+      <option value="hitter">hitter</option>
+      <option value="pitcher">pitcher</option>
+    </select>
+  </div>
+  <div class="push">
+    <button class="btn btn-sm btn-primary" ng-click="createPlayer()">Create</button>
+    <button class="btn btn-sm " ng-click="clearNewPlayer()" >clear</button>
+  </div>
+</form>

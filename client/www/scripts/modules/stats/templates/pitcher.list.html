@@ -1,0 +1,24 @@
+<div class="row">
+  <div data-ui-type="table">
+    <div data-ui-type="row">
+      <div data-ui-type="cell">name</div>
+      <div data-ui-type="cell">team</div>
+      <div data-ui-type="cell">w</div>
+      <div data-ui-type="cell">l</div>
+      <div data-ui-type="cell">sv</div>
+      <div data-ui-type="cell">ip</div>
+      <div data-ui-type="cell">k</div>
+    </div>
+    <div ng-repeat="pitcher in statsCtx.currentNetMlbPitchers | orderBy: 'name'" data-ui-type="row">
+      <div data-ui-type="cell">
+        <button class="link-cmd" ng-click="setCurrentMlbPlayer(pitcher)">{{pitcher.name}}</button>
+      </div>
+      <div data-ui-type="cell">{{pitcher.team}}</div>
+      <div data-ui-type="cell">{{pitcher.w}}</div>
+      <div data-ui-type="cell">{{pitcher.l}}</div>
+      <div data-ui-type="cell">{{pitcher.sv}}</div>
+      <div data-ui-type="cell">{{pitcher.ip}}</div>
+      <div data-ui-type="cell">{{pitcher.so}}</div>
+    </div>
+  </div>
+</div>

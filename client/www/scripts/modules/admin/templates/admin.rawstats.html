@@ -1,0 +1,35 @@
+<div class="container"><span>record count: {{ recordCount }}</span>
+  <button ng-click="loadRawBatters()" ng-hide="hideBatterButton">batters</button>
+  <button ng-click="loadRawPitchers()" ng-hide="hidePitcherButton">pitchers</button>
+  <table id="RawBatters">
+    <caption>raw stats</caption>
+    <r>
+      <th>
+        name
+      </th>
+      <th>
+        date
+      </th>
+      <th>
+        total
+      </th>
+      <th>
+        team
+      </th>
+      <th>
+        pos
+      </th>
+    </tr>
+    <tr ng-repeat="stat in stats | orderBy:['name', '-date']">
+      <td class="admin-date-col">{{ stat.date | date:'shortDate' }}</td>
+      <td class="admin-total-col">{{ stat.total }}</td>
+      <td>{{ stat.name }}</td>
+       <td>{{ stat.team }}</td>
+      <td>{{ stat.pos }}</td>
+      <td>
+        <button ng-click="editRawStat(stat)">edit</button>
+        <button ng-click="deleteRawStat(stat, $event)">delete</button>
+      </td>
+    </tr>
+  </table>
+</div>

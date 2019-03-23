@@ -1,0 +1,11 @@
+<div class="row">
+  <div data-ui-type="table">
+    <div ng-repeat="hitter in mlbCtx.currentHitters | orderBy: 'name'" data-ui-type="row">
+      <div data-ui-type="cell">{{hitter.mlbid}}</div>
+      <div data-ui-type="cell">
+        <button class="link-cmd" ng-click="setCurrentMlbPlayer(hitter)">{{hitter.name}}</button>
+      </div>
+      <div data-ui-type="cell">{{hitter.team}}</div>
+    </div>
+  </div>
+</div>

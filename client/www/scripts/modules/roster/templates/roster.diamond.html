@@ -1,0 +1,58 @@
+<div class="RosterDiamondContainer">
+  <h2 class="RosterDiamondTitle">{{roster.name}}</h2>
+  <div class="LeftFieldContainer PositionContainer">
+    <ul>
+      <li ng-repeat="leftField in leftFields" ng-class="getDiamondPlayerClass(leftField)">{{leftField.name}}</li>
+    </ul>
+  </div>
+  <div class="CenterFieldContainer PositionContainer">
+    <ul>
+      <li ng-repeat="centerField in centerFields" ng-class="getDiamondPlayerClass(centerField)">{{centerField.name}}</li>
+    </ul>
+  </div>
+  <div class="RightFieldContainer PositionContainer">
+    <ul>
+      <li ng-repeat="rightField in rightFields"  ng-class="getDiamondPlayerClass(rightField)">{{rightField.name}}</li>
+    </ul>
+  </div>
+  <div class="ThreeBContainer PositionContainer">
+    <ul>
+      <li ng-repeat="threeB in threeBs"  ng-class="getDiamondPlayerClass(threeB)">{{threeB.name}}</li>
+    </ul>
+  </div>
+  <div class="SSContainer PositionContainer">
+    <ul>
+      <li ng-repeat="ss in sss"  ng-class="getDiamondPlayerClass(ss)">{{ss.name}}</li>
+    </ul>
+  </div>
+  <div class="TwoBContainer PositionContainer">
+    <ul>
+      <li ng-repeat="twoB in twoBs"  ng-class="getDiamondPlayerClass(twoB)">{{twoB.name}}</li>
+    </ul>
+  </div>
+  <div class="OneBContainer PositionContainer">
+    <ul>
+      <li ng-repeat="oneB in oneBs"  ng-class="getDiamondPlayerClass(oneB)">{{oneB.name}}</li>
+    </ul>
+  </div>
+  <div class="StarterContainer PositionContainer">
+    <ul>
+      <li ng-repeat="starter in starters"  ng-class="getDiamondPlayerClass(starter)">{{starter.name}}</li>
+    </ul>
+  </div>
+  <div class="CatcherContainer PositionContainer">
+    <ul>
+      <li ng-repeat="catcher in catchers"  ng-class="getDiamondPlayerClass(catcher)">{{catcher.name}}</li>
+    </ul>
+  </div>
+  <div class="DHContainer PositionContainer">
+    <ul>
+      <li ng-repeat="dh in dhs"  ng-class="getDiamondPlayerClass(dh)">{{dh.name}}</li>
+    </ul>
+  </div>
+  <div class="RelieverContainer PositionContainer">
+    <ul>
+      <li ng-repeat="reliever in relievers"  ng-class="getDiamondPlayerClass(reliever)">{{reliever.name}}</li>
+    </ul>
+  </div>
+</div>

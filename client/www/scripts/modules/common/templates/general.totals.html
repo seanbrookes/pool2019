@@ -1,0 +1,59 @@
+<div class="Layout GeneralTotalsContainer">
+  <div class="GeneralTotalItemContainer">
+    <!-- grandTotal -->
+    <table class="general-total-table">
+      <caption>Totals</caption>
+      <tr ng-repeat="roster in rosters | orderBy:['-grandTotal'] | unique:'roster'">
+        <td class="roster-link-cell">
+          <a href="#roster/{{ roster.roster }}">{{ roster.roster }}</a>
+        </td>
+        <td class="total-value-cell">
+          <span>{{ roster.grandTotal }}</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="GeneralTotalItemContainer">
+    <!-- batterTotal -->
+    <table class="general-total-table">
+      <caption>Batters</caption>
+      <tr ng-repeat="roster in rosters | orderBy:['-batterTotal'] | unique:'roster'">
+        <td class="roster-link-cell">
+          <a href="#roster/{{ roster.roster }}">{{ roster.roster }}</a>
+        </td>
+        <td class="total-value-cell">
+          <span>{{ roster.batterTotal }}</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div class="GeneralTotalItemContainer">
+    <!-- starterTotal -->
+    <table class="general-total-table">
+      <caption>Starters</caption>
+      <tr ng-repeat="roster in rosters | orderBy:['-starterTotal'] | unique:'roster'">
+        <td class="roster-link-cell">
+          <a href="#roster/{{ roster.roster }}">{{ roster.roster }}</a>
+        </td>
+        <td class="total-value-cell">
+          <span>{{ roster.starterTotal }}</span>
+        </td>
+
+      </tr>
+    </table>
+  </div>
+  <div class="GeneralTotalItemContainer">
+    <!-- closerTotal -->
+    <table class="general-total-table">
+      <caption>Closers</caption>
+      <tr ng-repeat="roster in rosters | orderBy:['-closerTotal'] | unique:'roster'">
+        <td class="roster-link-cell">
+          <a href="#roster/{{ roster.roster }}">{{ roster.roster }}</a>
+        </td>
+        <td class="total-value-cell">
+          <span>{{ roster.closerTotal }}</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

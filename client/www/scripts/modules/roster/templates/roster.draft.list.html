@@ -1,0 +1,40 @@
+<table class="PreDraftRosterTable">
+  <caption>{{roster.name}}</caption>
+<tbody>
+  <tr ng-class="getDraftStatusClass(player, $index)" data-ui-type="row" ng-repeat="player in  roster.players">
+    <td>
+      <button class="SilentButton" ng-click="deleteRosterPlayer(roster, $index)">{{$index + 1}}</button>
+    </td>
+    <td>
+      <input type="text" ng-model="player.name" ng-blur="updatePlayer(roster)"/>
+    </td>
+    <td>
+      <select id="PosSelect"
+              ng-change="updatePlayer(roster)"
+              ng-model="player.pos" >
+        <option value="C">C</option>
+        <option value="1B">1B</option>
+        <option value="2B">2B</option>
+        <option value="3B">3B</option>
+        <option value="SS">SS</option>
+        <option value="LF">LF</option>
+        <option value="CF">CF</option>
+        <option value="RF">RF</option>
+        <option value="DH">DH</option>
+        <option value="SP">SP</option>
+        <option value="RP">RP</option>
+      </select>
+    </td>
+    <td>{{player.team}}</td>
+    <td>
+      <select ng-change="updatePlayerDraftStatus(roster)"
+              ng-model="player.draftStatus" >
+        <option value="protected">protected</option>
+        <option value="bubble">bubble</option>
+        <option value="unprotected">unprotected</option>
+        <option value="prospect">prospect</option>
+      </select>
+    </td>
+  </tr>
+  </tbody>
+</table>

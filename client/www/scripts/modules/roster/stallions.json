@@ -1,0 +1,290 @@
+[
+  {
+    "email": "brentfromvan@hotmail.com",
+    "name": "Stallions",
+    "owner": "Brent Klassen",
+    "players": [
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Martin",
+        "pos": "C",
+        "team": "TOR",
+        "mlbid": "431145"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Edwin Encarnacion",
+        "pos": "1B",
+        "team": "TOR",
+        "mlbid": "429665",
+        "roster": "stallions",
+        "index": 2
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Prince Fielder",
+        "pos": "1B",
+        "team": "TEX",
+        "mlbid": "425902"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Ian Kinsler",
+        "pos": "2B",
+        "team": "DET",
+        "mlbid": "435079",
+        "roster": "stallions",
+        "index": 5
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Valbuena",
+        "pos": "2B",
+        "team": "HOU",
+        "mlbid": "472528"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Evan Longoria",
+        "pos": "3B",
+        "team": "TB",
+        "mlbid": "446334",
+        "roster": "stallions",
+        "index": 4
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Pablo Sandoval",
+        "pos": "3B",
+        "team": "BOS",
+        "mlbid": "467055"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Hanley Ramirez",
+        "pos": "SS",
+        "team": "BOS",
+        "mlbid": "434670"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "JD Martinez",
+        "pos": "LF",
+        "team": "DET",
+        "mlbid": "502110"
+      },
+      {
+        "status": "nl",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Brandon Moss",
+        "pos": "LF",
+        "team": "CLE",
+        "mlbid": "461235",
+        "draftStatus": "roster"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Mike Trout",
+        "pos": "CF",
+        "team": "LAA",
+        "mlbid": "545361",
+        "roster": "stallions",
+        "index": 21
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Jose Bautista",
+        "pos": "RF",
+        "team": "TOR",
+        "mlbid": "430832",
+        "roster": "stallions",
+        "index": 3
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "David Ortiz",
+        "pos": "DH",
+        "team": "BOS",
+        "mlbid": "120074",
+        "roster": "stallions",
+        "index": 32
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Kendry Moralez]s",
+        "pos": "DH",
+        "team": "KC",
+        "mlbid": "434778"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "name": "Sonny Gray",
+        "pos": "SP",
+        "team": "OAK",
+        "mlbid": "543243",
+        "roster": "stallions",
+        "index": 10
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "name": "Felix Hernandez",
+        "pos": "SP",
+        "team": "SEA",
+        "mlbid": "433587",
+        "roster": "stallions",
+        "index": 23
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "name": "David Price",
+        "pos": "SP",
+        "team": "TB",
+        "mlbid": "456034",
+        "roster": "stallions",
+        "index": 24
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "stallions",
+        "name": "Michael Pineda",
+        "pos": "SP",
+        "team": "NYY",
+        "mlbid": "501381"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "stallions",
+        "name": "Y Ventura",
+        "pos": "SP",
+        "team": "KC",
+        "mlbid": "570649"
+      },
+      {
+        "name": "Fernando Rodney",
+        "pos": "RP",
+        "team": "SEA",
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "roster": "stallions",
+        "index": 31,
+        "mlbid": "407845"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "stallions",
+        "name": "Cody Allen",
+        "pos": "RP",
+        "team": "NYY",
+        "mlbid": "592102"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "stallions",
+        "name": "Millar",
+        "pos": "RP",
+        "team": "NYY",
+        "mlbid": "453192"
+      },
+      {
+        "status": "regular",
+        "posType": "pitcher",
+        "slug": "stallions",
+        "name": "Drew Huchison",
+        "pos": "SP",
+        "team": "TOR",
+        "mlbid": "571800",
+        "draftStatus": "roster"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "hitter",
+        "name": "Nelson Cruz",
+        "pos": "RF",
+        "team": "TEX",
+        "mlbid": "443558",
+        "roster": "mashers",
+        "index": 6,
+        "slug": "stallions"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "stallions",
+        "name": "Betances",
+        "pos": "RP",
+        "team": "NYY",
+        "mlbid": "476454"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "stallions",
+        "name": "Salvador Perez",
+        "pos": "C",
+        "team": "KC",
+        "mlbid": "521692"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "hitter",
+        "name": "Carlos Correa",
+        "pos": "SS",
+        "team": "HOU",
+        "roster": "stallions",
+        "index": 27,
+        "mlbid": "621043"
+      },
+      {
+        "name": "D. Salazar",
+        "pos": "SP",
+        "team": "CLE",
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "pitcher",
+        "mlbid": "517593"
+      }
+    ],
+    "slug": "stallions",
+    "year": 2014
+  }
+]

@@ -1,0 +1,50 @@
+<div>
+  <div>
+    <ul>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxModel.bashers" >Bashers</label>
+      </li>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxModel.mashers" >Mashers</label>
+      </li>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxModel.rallycaps" >Rally Caps</label>
+      </li>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxModel.stallions" >Stallions</label>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxStatusModel.unprotected" >Unprotected</label>
+      </li>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxStatusModel.bubble" >Bubble</label>
+      </li>
+      <li>
+        <label><input type="checkbox" ng-model="checkboxStatusModel.prospect" >Prospect</label>
+      </li>
+    </ul>
+
+  </div>
+  <table>
+    <thead>
+    <tr>
+      <th><button ng-click="sortByName()">name</button></th>
+      <th><button ng-click="sortByPos()">pos</button></th>
+      <th><button  ng-click="sortByTeam()">team</button></th>
+      <th><button ng-click="sortByRoster()">roster</button></th>
+      <th><button ng-click="sortByStatus()">status</button></th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="player in unprotectedPlayers">
+        <td>{{player.name}}</button></td>
+        <td>{{player.pos}}</td>
+        <td>{{player.team}}</td>
+        <td>{{player.roster}}</td>
+        <td>{{player.draftStatus}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

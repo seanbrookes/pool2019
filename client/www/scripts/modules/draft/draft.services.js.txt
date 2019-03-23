@@ -1,0 +1,43 @@
+/**
+ * Created by seanbrookes on 2014-03-27.
+ */
+Draft.service('DraftService',[
+  'Draft',
+  'Draftpick',
+  function(Draft, Draftpick){
+
+    var svc = this;
+
+    svc.addDraftSlot = function(slot){
+
+      return DraftPick.create(slot,
+        function(response){
+          console.log('added draft slot');
+        },
+        function(response){
+          console.log('error adding draft slot');
+        }
+
+      );
+
+    };
+    svc.getDraftBoard = function(filter) {
+      if (!filter) {
+        filter = {};
+      }
+      return Draftpick.query(filter,
+        function(response){
+          //console.log('good get Draftpicks: ' + response);
+          return response;
+        },
+        function(error){
+          console.log('bad get draftpics', error);
+        }
+      );
+    };
+
+    return svc;
+
+  }
+
+]);

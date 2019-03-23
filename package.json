@@ -1,0 +1,73 @@
+{
+  "name": "pool2018",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=8.10"
+  },
+  "scripts": {
+    "start": "node .",
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "pretest": "jshint .",
+    "dev": "webpack --mode development",
+    "prod": "webpack --mode production"
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "compression": "^1.0.3",
+    "cors": "^2.5.2",
+    "css-loader": "^0.28.11",
+    "errorhandler": "^1.1.1",
+    "express": "^4.13.4",
+    "file-loader": "^1.1.11",
+    "gulp": "^3.9.1",
+    "gulp-batch": "~1.0.5",
+    "gulp-less": "~3.0.5",
+    "gulp-watch": "~4.3.5",
+    "loopback": "^2.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^2.1.0",
+    "loopback-connector-mongodb": "^1.13.3",
+    "loopback-datasource-juggler": "^2.39.0",
+    "moment": "^2.22.0",
+    "path": "~0.11.14",
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "request": "~2.54.0",
+    "serve-favicon": "^2.0.1",
+    "style-loader": "^0.20.3",
+    "thunk": "0.0.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "gulp": "^3.9.1",
+    "gulp-react": "^3.1.0",
+    "jshint": "^2.5.6",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.7",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "react"
+    ]
+  },
+  "description": "pool2015"
+}

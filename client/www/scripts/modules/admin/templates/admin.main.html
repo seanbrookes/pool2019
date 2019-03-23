@@ -1,0 +1,160 @@
+<div class="container">
+  <h2>Admin Home</h2>
+  <button ng-click="refreshStats()">refresh stats</button>
+  <div class="row">
+
+    <div class="col-xs-10">
+
+      <div class="container">
+        <div class="Layout">
+          <div>
+            <div class="player-list-container">
+              <button ng-click="loadRoster('bashers')" ng-model="currRoster">bashers</button>
+              <button ng-click="loadRoster('mashers')" ng-model="currRoster">mashers</button>
+              <button ng-click="loadRoster('rallycaps')" ng-model="currRoster">rally caps</button>
+              <button ng-click="loadRoster('stallions')" ng-model="currRoster">stallions</button>
+              <table>
+                <tr ng-repeat="player in players  | orderBy:['name']" ng-class="getAssociatedStatus(player)">
+                  <td>
+                    <button ng-model="player" ng-click="associateRosterPLayer(player)">lnk</button>
+                  </td>
+                  <td data-mlbid="{{ player.mlbid }}">{{ player.name }}</td>
+                  <td>{{ player.team }}</td>
+                  <td>
+                    <!--<button ng-model="player" ng-click="editPlayer(player)" >edit</button>-->
+                    <button ng-model="player" ng-click="deletePlayer(player)" >delete</button>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div>
+            <div class="player-list-container">
+              <button ng-click="pullRawBatters()">pull batters</button>
+              <button ng-click="pullRawPitchers()">pull pitcher</button>
+              <span>{{allPlayers.length}}</span>
+              <ul>
+                <li ng-repeat="player in allPlayers | orderBy:['name']  track by $index">
+                  <!--<input-->
+                  <!--type="checkbox"-->
+                  <!--value="{{player.mlbid}}"-->
+                  <!--ng-model="player.selected"-->
+                  <!--name="selectedMLBIds[]"><label>{{ player.name}}</label>-->
+
+                  <label>
+                    <input
+                      type="radio"
+                      name="mLBSet"
+                      ng-model="$parent.mLBSet"
+                      ng-change="chooseMLBPLayer()"
+                      ng-value="player" />
+                    {{player.name}} - {{ player.team }}
+                  </label>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-2">
+            <p>{{ mLBSet.mlbid }}</p>
+            <p>{{ linkPLayer.name }}</p>
+
+          </div>
+        </div>
+      </div>
+      <div>
+        <form id="FormAdminRosterPlayer" class="forms columnar">
+          <div>
+            <!-- roster -->
+            <label for="RosterSelect">Roster</label>
+            <select id="RosterSelect" ng-model="currentRosterName" class="roster-select">
+              <option value="bashers">bashers</option>
+              <option value="mashers">mashers</option>
+              <option value="rallycaps">rallycaps</option>
+              <option value="stallions">stallions</option>
+            </select>
+          </div>
+          <div>
+            <!-- player name -->
+            <label for="PlayerNameInput">Player</label>
+            <input type="text" id="PlayerNameInput" ng-model="player.name" class="input-player-name" value="">
+          </div>
+          <div>
+            <!-- pos -->
+            <label for="PosSelect">Pos</label>
+            <select id="PosSelect" class="select-pos pick-property-edit" ng-model="player.pos" data-id="<%= S.id %>" data-type="pos">
+              <option value="C">C</option>
+              <option value="1B">1B</option>
+              <option value="2B">2B</option>
+              <option value="3B">3B</option>
+              <option value="SS">SS</option>
+              <option value="LF">LF</option>
+              <option value="CF">CF</option>
+              <option value="RF">RF</option>
+              <option value="DH">DH</option>
+              <option value="SP">SP</option>
+              <option value="RP">RP</option>
+            </select>
+          </div>
+          <div>
+            <!-- team -->
+            <label for="TeamSelect">Team</label>
+            <select class="select-team pick-property-edit" id="TeamSelect" ng-model="player.team" data-id="<%= S.id %>" data-type="team">
+              <option value="BAL">BAL</option>
+              <option value="BOS">BOS</option>
+              <option value="CHA">CHA</option>
+              <option value="CLE">CLE</option>
+              <option value="DET">DET</option>
+              <option value="HOU">HOU</option>
+              <option value="KC">KC</option>
+              <option value="LAA">LAA</option>
+              <option value="MIN">MIN</option>
+              <option value="NYY">NYY</option>
+              <option value="OAK">OAK</option>
+              <option value="SEA">SEA</option>
+              <option value="TB">TB</option>
+              <option value="TEX">TEX</option>
+              <option value="TOR">TOR</option>
+            </select>
+          </div>
+          <div>
+            <label for="DraftStatusSelect">Roster Status</label>
+            <select id="DraftStatusSelect" ng-model="player.draftStatus" class="status-select">
+              <option value="bubble">bubble</option>
+              <option value="dropped">dropped</option>
+              <option value="prospect">prospect</option>
+              <option value="protected">protected</option>
+              <option value="roster">roster</option>
+            </select>
+          </div>
+          <div>
+            <label for="PlayerStatusSelect">Player Status</label>
+            <select id="PlayerStatusSelect" ng-model="player.status" class="status-select">
+              <option value="dl">dl</option>
+              <option value="nl">nl</option>
+              <option value="prospect">prospect</option>
+              <option value="regular">regular</option>
+            </select>
+          </div>
+          <div>
+            <label for="PosTypeSelect">Position Type</label>
+            <select id="PosTypeSelect" ng-model="player.posType" class="status-select">
+              <option value="hitter">hitter</option>
+              <option value="pitcher">pitcher</option>
+            </select>
+          </div>
+          <div class="push">
+            <button class="btn-submit btn-submit-rosterplayer" ng-click="savePlayer(player)" ng-model="player">Save</button>
+          </div>
+        </form>
+      </div>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,264 @@
+[
+  {
+    "email": "russellm@clearwaternow.ca",
+    "name": "Rally Caps",
+    "owner": "Russ McPherson",
+    "players": [
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Evan Gattis",
+        "pos": "C",
+        "team": "HOU",
+        "mlbid": "594828"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Mike Zunino",
+        "pos": "C",
+        "team": "SEA",
+        "mlbid": "572287"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Chris Davis",
+        "pos": "1B",
+        "team": "BAL",
+        "mlbid": "448801"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Mike Napoli",
+        "pos": "1B",
+        "team": "BOS",
+        "mlbid": "435063"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Altuve",
+        "pos": "2B",
+        "team": "HOU",
+        "mlbid": "514888"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Brett Lawrie",
+        "pos": "2B",
+        "team": "OAK",
+        "mlbid": "543434"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Josh Donaldson",
+        "pos": "3B",
+        "team": "OAK",
+        "mlbid": "518626"
+      },
+      {
+        "status": "protected",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "A Beltre",
+        "pos": "3B",
+        "team": "TEX",
+        "mlbid": "134181"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "nl",
+        "posType": "hitter",
+        "name": "Jose Reyes",
+        "pos": "SS",
+        "team": "TOR",
+        "mlbid": "408314"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Lowrie",
+        "pos": "SS",
+        "team": "HOU",
+        "mlbid": "476704"
+      },
+      {
+        "status": "protected",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Michael Brantly",
+        "pos": "CF",
+        "team": "BAL",
+        "mlbid": "488726"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Souza",
+        "pos": "RF",
+        "team": "TB",
+        "mlbid": "519306"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Josh Reddick",
+        "pos": "RF",
+        "team": "OAK",
+        "mlbid": "502210"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Albert Puhols",
+        "pos": "DH",
+        "team": "LAA",
+        "mlbid": "405395"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "rallycaps",
+        "name": "Victor Martinez",
+        "pos": "DH",
+        "team": "DET",
+        "mlbid": "400121"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "name": "Anibal Sanchez",
+        "pos": "SP",
+        "team": "CHA",
+        "mlbid": "434671"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "name": "Chris Sale",
+        "pos": "SP",
+        "team": "CHA",
+        "mlbid": "519242"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "Justin Verlander",
+        "pos": "SP",
+        "team": "DET",
+        "mlbid": "434378"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "Jeff Samardzija",
+        "pos": "SP",
+        "team": "CHA",
+        "mlbid": "502188"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "Bauer",
+        "pos": "SP",
+        "team": "CLE",
+        "mlbid": "545333"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "Philip Hughes",
+        "pos": "SP",
+        "team": "MIN",
+        "mlbid": "461833"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "McHugh",
+        "pos": "SP",
+        "team": "HOU",
+        "mlbid": "543521"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "pitcher",
+        "name": "Greg Holland",
+        "pos": "RP",
+        "team": "KC",
+        "mlbid": "518813"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "Greggerson",
+        "pos": "RP",
+        "team": "HOU",
+        "mlbid": "502381"
+      },
+      {
+        "status": "protected",
+        "posType": "pitcher",
+        "slug": "rallycaps",
+        "name": "David Robertson",
+        "pos": "RP",
+        "team": "NYY",
+        "mlbid": "502085"
+      },
+      {
+        "name": "B Gardner",
+        "pos": "CF",
+        "team": "NYY",
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "hitter",
+        "mlbid": "458731"
+      },
+      {
+        "name": "Boxberger",
+        "pos": "RP",
+        "team": "TB",
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "pitcher",
+        "mlbid": "502202"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "nl",
+        "posType": "hitter",
+        "name": "Yoenis Cespedes",
+        "pos": "LF",
+        "team": "DET",
+        "mlbid": "493316",
+        "slug": "rallycaps"
+      }
+    ],
+    "slug": "rallycaps",
+    "year": 2014
+  }
+]

@@ -1,0 +1,19 @@
+<div>
+  Stats Roster List
+  <div ng-repeat="roster in statsCtx.currentRosters">
+    <h2>{{roster.slug}}</h2>
+
+  <div data-ui-type="table">
+    <div data-ui-type="row"  ng-repeat="player in roster.players">
+      <div data-ui-type="cell" >{{player.mlbid}}</div>
+      <div data-ui-type="cell" >
+        <button class="link-cmd" ng-click="setCurrentRosterPlayer(player)">{{player.name}}</button>
+      </div>
+      <div data-ui-type="cell">
+        {{player.pos}}
+      </div>
+      <div data-ui-type="cell">{{player.team}}</div>
+    </div>
+  </div>
+  </div>
+</div>

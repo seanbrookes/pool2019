@@ -1,0 +1,194 @@
+body {
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+.layout {
+  display: flex;
+}
+.branding__logo {
+  height: 3.1rem;
+  margin-left: 1rem;
+}
+.page-title {
+  font-size: 28px;
+  margin-left: 2rem;
+  font-weight: lighter;
+  color: #044410;
+}
+.view-title {
+  font-size: 16px;
+  margin-left: 2rem;
+  color: #777777;
+}
+.main-content-container {
+  padding-left: 2.5rem;
+}
+.main-nav {
+  a {
+    display: inline-block;
+    margin-left: 2rem;
+  }
+}
+.side-nav-container {
+  margin-top: .75rem;
+}
+.nav-totals {
+  tr.active-nav {
+    background-color: #ffffff;
+  }
+  .total-name {
+    font-size: 14px;
+    padding-top:.2rem;
+    padding-bottom: .2rem;
+  }
+  .total-value {
+    font-weight: 500;
+    color: #2b0859;
+  }
+  .total-delta {
+    span {
+      display: inline-block;
+      font-size: 12px;
+      color: #a66323;
+      padding-right: .2rem;
+
+    }
+  }
+}
+.nav-rank-list {
+  list-style: none;
+  margin-right: 0;
+  padding-right: 0;
+  -webkit-margin-after: 0;
+
+  li {
+    padding-bottom: .3rem;
+  }
+
+  li.active-nav {
+    margin-right: 0;
+    background-color: #ffffff;
+  }
+
+
+}
+table {
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
+th {
+  button {
+    border: 0;
+    background: transparent;
+    color: #0000cc;
+    text-decoration: underline;
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+      color: #ac2925;
+    }
+  }
+}
+
+
+.main-draft-container {
+  padding-left: 8rem;
+  font-size: 18px;
+
+  .draft-name-input {
+    padding: .7rem;
+    border-radius: .4rem;
+    width: 20rem;
+  }
+}
+/*  DIAMOND VIEW */
+.RosterDiamondContainer {
+  position: relative;
+  margin-top: 1rem;
+  border: 1px solid black;
+  width: 56rem;
+  height: 48rem;
+  background: url('/dist/images/diamond.svg') no-repeat center center;
+  background-size: cover;
+}
+.RosterDiamondContainer .PositionContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.RosterDiamondContainer .PositionContainer ul li {
+  text-decoration: underline;
+}
+.RosterDiamondContainer .PositionContainer ul li.draft-protected {
+  color: #249445;
+}
+.RosterDiamondContainer .PositionContainer ul li.draft-overprotected {
+  color: #cbb03a;
+}
+.RosterDiamondContainer .PositionContainer ul li.draft-bubble {
+  color: #3d4ecb;
+}
+.RosterDiamondContainer .LeftFieldContainer {
+  position: absolute;
+  top: 5.5rem;
+  left: 3.7rem;
+}
+.RosterDiamondContainer .CenterFieldContainer {
+  position: absolute;
+  top: 2rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .RightFieldContainer {
+  position: absolute;
+  top: 5.5rem;
+  right: 3.7rem;
+}
+.RosterDiamondContainer .ThreeBContainer {
+  position: absolute;
+  top: 26rem;
+  left: 4rem;
+}
+.RosterDiamondContainer .TwoBContainer {
+  position: absolute;
+  top: 10rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .OneBContainer {
+  position: absolute;
+  top: 26rem;
+  right: 4rem;
+}
+.RosterDiamondContainer .SSContainer {
+  position: absolute;
+  top: 17rem;
+  left: 11rem;
+}
+.RosterDiamondContainer .StarterContainer {
+  position: absolute;
+  top: 22rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .CatcherContainer {
+  position: absolute;
+  top: 42rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .DHContainer {
+  position: absolute;
+  top: 40rem;
+  right: 6rem;
+}
+.RosterDiamondContainer .RelieverContainer {
+  position: absolute;
+  top: 40rem;
+  left: 6rem;
+}
+.RosterDiamondTitle {
+  font-size: 110%;
+  font-weight: 400;
+  padding: .2rem;
+  margin: 0;
+  background-color: darkblue;
+  color: #ffffff;
+}
+

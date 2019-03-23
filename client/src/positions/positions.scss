@@ -1,0 +1,37 @@
+.pos-rank--title {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: 28px;
+  letter-spacing: .75rem;
+  font-weight: lighter;
+  color: #0000cc;
+
+}
+.rank-table {
+  width: 40rem;
+  .player-name {
+    white-space: nowrap;
+  }
+
+  .point-col {
+    width: 4rem;
+    padding: .2rem;
+    padding-left: 1rem;
+  }
+  .row-total {
+    width: 6rem;
+    padding: .2rem;
+    padding-left: 1rem;
+  }
+  td.sort-on {
+    background-color: #e4e4e4;
+    color: #0000be;
+  }
+}
+
+tr.rank-list--row {
+  &.stripe {
+    background-color: #eeeeee;
+  }
+}
+

@@ -1,0 +1,16 @@
+<div>
+  <select ng-model="mlbCtx.currentRoster"
+          ng-options="roster as roster.slug for roster in mlbCtx.currentRosters"></select>
+</div>
+<div data-ui-type="table" >
+  <div data-ui-type="row" ng-class="{ 'mlb-mapped': player.mlbid }" ng-repeat="player in mlbCtx.currentRoster.players">
+    <div data-ui-type="cell" >{{player.mlbid}}</div>
+    <div data-ui-type="cell" >
+      <button class="link-cmd" ng-click="setCurrentRosterPlayer(player)">{{player.name}}</button>
+    </div>
+    <div data-ui-type="cell">
+      {{player.pos}}
+    </div>
+    <div data-ui-type="cell">{{player.team}}</div>
+  </div>
+</div>

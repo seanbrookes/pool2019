@@ -1,0 +1,850 @@
+body {
+  font-size: 16px;
+  width: 100%;
+  background-color: #ffffff;
+  margin: 0;
+  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+}
+table {
+  width: 100%;
+  padding: 0;
+}
+.Layout {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.NoWrap {
+  flex-wrap: nowrap;
+}
+.Spread {
+  justify-content: space-between;
+}
+tr.current-pick {
+  background-color: #ecdbbf;
+}
+.fix-top  {
+  top: 0;
+  position: fixed;
+}
+.DraftBoard_CurrentPickTitle {
+  padding: .5rem;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  width: 100%;
+}
+.nav-pills {
+  background: #ffffff;
+}
+.blink {
+  animation: blink-animation 6s 2s infinite;
+  -webkit-animation: blink-animation 6s 2s infinite;
+}
+@keyframes blink-animation {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-inout {
+  -webkit-transition: linear 2s;
+  -moz-transition: linear 2s;
+  -ms-transition: linear 2s;
+  -o-transition: linear 2s;
+  transition: linear 2s;
+}
+.fade-inout.ng-enter {
+  opacity: 0;
+}
+.fade-inout.ng-enter-active {
+  opacity: 1;
+}
+.fade-inout.ng-leave {
+  opacity: 1;
+}
+.fade-inout.ng-leave-active {
+  opacity: 0;
+}
+.PreDraftRosterTable {
+  margin: 0 2rem 0 2rem;
+  font-size: 80%;
+  border: 1px solid #0d3349;
+}
+.PreDraftRosterTable caption {
+  letter-spacing: .4rem;
+  background-color: #0d3349;
+  color: #ffffff;
+}
+.PreDraftRosterTable tbody tr:nth-child(even) {
+  background-color: #efefef;
+}
+.PreDraftRosterTable tbody td {
+  color: #888888;
+}
+.PreDraftRosterTable tbody tr.draft-protected:nth-child(even) {
+  background-color: #dfdfdf;
+}
+.PreDraftRosterTable tbody tr.draft-protected td {
+  color: #2acb52;
+}
+.PreDraftRosterTable tbody tr.draft-overprotected td {
+  color: #cbb03a;
+}
+.PreDraftRosterTable tbody tr.draft-bubble td {
+  color: #3d4ecb;
+}
+.DefaultChatWindow {
+  max-width: 40rem;
+  border: 1px solid blue;
+}
+.DraftPickFormContainer {
+  padding: 1rem;
+  border: 1px solid #eeeeee;
+  border-radius: 1rem;
+}
+.DraftPickRow--odd {
+  background-color: #eeeeee;
+}
+.DraftPickRow--odd .DraftPickCell {
+  border: 1px solid #ffffff;
+}
+.DraftPickCell {
+  border: 1px solid #eeeeee;
+}
+.DraftPickCell.DraftPickCell__Round {
+  width: 3rem;
+  padding-left: .2rem;
+}
+.DraftPickCell.DraftPickCell__PickNumber {
+  width: 3rem;
+  padding-left: .2rem;
+}
+.DraftPickCell.DraftPickCell__Roster {
+  width: 10rem;
+}
+.DraftPickCell.DraftPickCell__Name {
+  width: 26rem;
+}
+.RosterDiamondContainer {
+  position: relative;
+  border: 1px solid black;
+  width: 56rem;
+  height: 48rem;
+  background: url('/images/diamond.svg') no-repeat center center;
+  background-size: cover;
+}
+.RosterDiamondContainer .PositionContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.RosterDiamondContainer .PositionContainer ul li {
+  text-decoration: underline;
+}
+.RosterDiamondContainer .PositionContainer ul li.draft-protected {
+  color: #2acb52;
+}
+.RosterDiamondContainer .PositionContainer ul li.draft-overprotected {
+  color: #cbb03a;
+}
+.RosterDiamondContainer .PositionContainer ul li.draft-bubble {
+  color: #3d4ecb;
+}
+.RosterDiamondContainer .LeftFieldContainer {
+  position: absolute;
+  top: 4rem;
+  left: 2rem;
+}
+.RosterDiamondContainer .CenterFieldContainer {
+  position: absolute;
+  top: 3rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .RightFieldContainer {
+  position: absolute;
+  top: 4rem;
+  right: 2rem;
+}
+.RosterDiamondContainer .ThreeBContainer {
+  position: absolute;
+  top: 18rem;
+  left: 2rem;
+}
+.RosterDiamondContainer .TwoBContainer {
+  position: absolute;
+  top: 10rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .OneBContainer {
+  position: absolute;
+  top: 18rem;
+  right: 2rem;
+}
+.RosterDiamondContainer .SSContainer {
+  position: absolute;
+  top: 11rem;
+  left: 10rem;
+}
+.RosterDiamondContainer .StarterContainer {
+  position: absolute;
+  top: 20rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .CatcherContainer {
+  position: absolute;
+  top: 42rem;
+  left: 26rem;
+}
+.RosterDiamondContainer .DHContainer {
+  position: absolute;
+  top: 36rem;
+  right: 10rem;
+}
+.RosterDiamondContainer .RelieverContainer {
+  position: absolute;
+  top: 32rem;
+  left: 8rem;
+}
+.RosterDiamondTitle {
+  font-size: 110%;
+  font-weight: 400;
+  padding: .2rem;
+  margin: 0;
+  background-color: darkblue;
+  color: #ffffff;
+}
+.main-content-container {
+  background-color: #ffffff;
+  color: #444444;
+}
+.PageHeaderContainer {
+  margin-bottom: .3rem;
+  padding: .2rem 1rem 0 .2rem;
+}
+.branding__logo {
+  height: 3.1rem;
+  margin-left: 1rem;
+}
+nav .mainnav-list {
+  list-style: none;
+}
+nav .mainnav-list li {
+  padding: .3rem;
+  border: 1px solid #fefefe;
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+}
+nav .mainnav-list li.active-nav {
+  border-bottom-color: #0000cc;
+}
+nav .mainnav-list li a {
+  text-decoration: none;
+}
+nav.mashers a.mashers {
+  background-color: #ffffff;
+  color: #444444;
+}
+nav.bashers a.bashers {
+  background-color: #ffffff;
+  color: #444444;
+}
+nav.rallycaps a.rallycaps {
+  background-color: #ffffff;
+  color: #444444;
+}
+nav.stallions a.stallions {
+  background-color: #ffffff;
+  color: #444444;
+}
+.SilentButton {
+  border: 0;
+  background: transparent;
+}
+.SilentButton:hover {
+  text-decoration: none;
+}
+.last-update {
+  padding: 1rem;
+}
+h2.whos-hot {
+  padding: 0;
+  margin: 0 0 0 .6rem;
+  font-size: 100%;
+  color: #777777;
+  font-weight: 400;
+}
+.hotlist--container {
+  margin: 0 .3rem 0 .3rem;
+  padding: 0 .3rem 0 .3rem;
+}
+.hotlist--table {
+  border: 1px solid #eeeeee;
+  font-size: 13px;
+  color: #666666;
+}
+.hotlist--table caption {
+  background-color: darkblue;
+  color: #ffffff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.hotlist--table tr:nth-child(odd) {
+  background-color: #e1e1e1;
+}
+.hotlist--table .hotstatname-col {
+  font-size: 14px;
+  color: #000060;
+}
+.hotlist--table .hotstat-col {
+  font-size: 15px;
+  font-weight: 400;
+  color: #000060;
+}
+div.mashers .side-nav-bar tr.mashers {
+  background-color: #ffffff;
+}
+div.mashers .side-nav-bar tr.mashers a {
+  color: #444444;
+}
+div.mashers .side-nav-bar tr.mashers .total-value {
+  color: #444444;
+}
+div.bashers .side-nav-bar tr.bashers {
+  background-color: #ffffff;
+}
+div.bashers .side-nav-bar tr.bashers a {
+  color: #444444;
+}
+div.bashers .side-nav-bar tr.bashers .total-value {
+  color: #444444;
+}
+div.rallycaps .side-nav-bar tr.rallycaps {
+  background-color: #ffffff;
+}
+div.rallycaps .side-nav-bar tr.rallycaps a {
+  color: #444444;
+}
+div.rallycaps .side-nav-bar tr.rallycaps .total-value {
+  color: #444444;
+}
+div.stallions .side-nav-bar tr.stallions {
+  background-color: #ffffff;
+}
+div.stallions .side-nav-bar tr.stallions a {
+  color: #444444;
+}
+div.stallions .side-nav-bar tr.stallions .total-value {
+  color: #444444;
+}
+div.pos-C .nav-rank-list li.pos-C {
+  background-color: #ffffff;
+}
+div.pos-C .nav-rank-list li.pos-C a {
+  color: #444444;
+}
+div.pos-1B .nav-rank-list li.pos-1B {
+  background-color: #ffffff;
+}
+div.pos-1B .nav-rank-list li.pos-1B a {
+  color: #444444;
+}
+div.pos-2B .nav-rank-list li.pos-2B {
+  background-color: #ffffff;
+}
+div.pos-2B .nav-rank-list li.pos-2B a {
+  color: #444444;
+}
+div.pos-3B .nav-rank-list li.pos-3B {
+  background-color: #ffffff;
+}
+div.pos-3B .nav-rank-list li.pos-3B a {
+  color: #444444;
+}
+div.pos-SS .nav-rank-list li.pos-SS {
+  background-color: #ffffff;
+}
+div.pos-SS .nav-rank-list li.pos-SS a {
+  color: #444444;
+}
+div.pos-LF .nav-rank-list li.pos-LF {
+  background-color: #ffffff;
+}
+div.pos-LF .nav-rank-list li.pos-LF a {
+  color: #444444;
+}
+div.pos-CF .nav-rank-list li.pos-CF {
+  background-color: #ffffff;
+}
+div.pos-CF .nav-rank-list li.pos-CF a {
+  color: #444444;
+}
+div.pos-RF .nav-rank-list li.pos-RF {
+  background-color: #ffffff;
+}
+div.pos-RF .nav-rank-list li.pos-RF a {
+  color: #444444;
+}
+div.pos-DH .nav-rank-list li.pos-DH {
+  background-color: #ffffff;
+}
+div.pos-DH .nav-rank-list li.pos-DH a {
+  color: #444444;
+}
+div.pos-SP .nav-rank-list li.pos-SP {
+  background-color: #ffffff;
+}
+div.pos-SP .nav-rank-list li.pos-SP a {
+  color: #444444;
+}
+div.pos-RP .nav-rank-list li.pos-RP {
+  background-color: #ffffff;
+}
+div.pos-RP .nav-rank-list li.pos-RP a {
+  color: #444444;
+}
+.roster-container h2 {
+  margin-top: 0;
+}
+.main-content-container {
+  padding-left: 2rem;
+}
+.main-content-container h3 {
+  margin-top: 0;
+}
+.GeneralTotalsContainer {
+  justify-content: flex-start;
+}
+.GeneralTotalsContainer .GeneralTotalItemContainer {
+  padding: .5rem 1rem .5rem 1rem;
+}
+.x.axis path {
+  display: none;
+}
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
+.side-nav-bar {
+  background-color: #08592b;
+  padding: 0;
+  margin: 0;
+}
+.side-nav-bar hr {
+  margin-bottom: 0;
+}
+.side-nav-bar .other-nav-container ul {
+  list-style: none;
+}
+.side-nav-bar .other-nav-container ul li a {
+  color: #ffff47;
+}
+.side-nav-bar .side-nav-container .nav-rank-title {
+  color: #eeeeee;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+.side-nav-bar .side-nav-container .nav-rank-list {
+  list-style: none;
+}
+.side-nav-bar .side-nav-container .nav-rank-list a {
+  display: inline-block;
+  margin-left: 1rem;
+  color: #ffffff;
+  letter-spacing: .1rem;
+}
+.side-nav-bar .side-nav-container .nav-rank-list a:active {
+  color: #000000;
+}
+.side-nav-bar .side-nav-container .nav-rank-list li.active-nav {
+  background: #ffffff;
+}
+.side-nav-bar .side-nav-container .nav-rank-list li.active-nav a {
+  color: #444444;
+}
+.side-nav-bar .side-nav-container .total-delta {
+  font-size: 80%;
+  font-weight: 100;
+  color: #ff9944;
+}
+.side-nav-bar .side-nav-container .total-value {
+  color: #eeeeee;
+}
+.side-nav-bar .side-nav-container .nav-totals {
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+  border-color: transparent;
+}
+.side-nav-bar .side-nav-container .nav-totals tr {
+  border-color: transparent;
+  background-color: rgba(200, 200, 200, 0.2);
+  border-bottom: 1px solid #444444;
+}
+.side-nav-bar .side-nav-container .nav-totals a {
+  display: inline-block;
+  margin-left: 1rem;
+  padding: .5rem;
+  color: #ffffff;
+  letter-spacing: .15rem;
+}
+.side-nav-bar .side-nav-container .nav-totals a:active {
+  color: #000000;
+}
+.navbar-nav > li > a {
+  line-height: 42px;
+}
+.link-cmd {
+  border: 0;
+  background: transparent;
+  color: blue;
+  text-align: left;
+}
+.page-header {
+  padding-bottom: 9px;
+  margin: .2rem 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+[data-ui-type="table"] {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+[data-ui-type="row"] {
+  display: table-row;
+}
+[data-ui-type="cell"] {
+  display: table-cell;
+  vertical-align: top;
+}
+.draft-table {
+  width: 28rem;
+  margin: 0 auto 0 auto;
+}
+.branding {
+  display: inline-block;
+}
+.header-main-nav-container {
+  display: inline-block;
+}
+.header-main-nav-container ul {
+  list-style: none;
+}
+.header-main-nav-container ul li {
+  display: inline-block;
+}
+[data-id="MLBContainer"] .mlb-mapped {
+  background-color: #B1F0B9;
+}
+.protected-container .protected-nav-list {
+  list-style: none;
+}
+.protected-container .protected-nav-list li {
+  display: inline-block;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.protected-list-container [data-ui-type="table"] {
+  max-width: 50rem;
+}
+.protected-list-container [data-ui-type="row"] .protected-col {
+  width: 8rem;
+  text-align: center;
+}
+.protected-list-container [data-ui-type="row"] .pos-col {
+  width: 8rem;
+}
+.protected-list-container [data-ui-type="row"] .team-col {
+  width: 8rem;
+}
+.protected-list-container [data-ui-type="row"] [data-ui-type="cell"] {
+  border-bottom: 1px solid #ffffff;
+}
+.protected-list-container [data-ui-type="row"].protected-row {
+  background-color: #D5E4EA;
+}
+/*
+2016
+
+*/
+.AdminRosterNavList {
+  list-style: none;
+}
+.AdminRosterNavList li {
+  display: inline-block;
+}
+.AdminRosterNavList li button {
+  background: none;
+  border: 0;
+}
+.PlayerChartContainer {
+  position: relative;
+}
+/*
+
+Original
+
+*/
+.lnk-command {
+  border: 0;
+  background-color: transparent;
+  font-size: 73%;
+  color: #2b0859;
+  text-decoration: underline;
+}
+.event-command {
+  float: right;
+}
+.tags-list li {
+  display: inline;
+}
+.event-blurb {
+  /*border:1px solid #bbbbbb;*/
+  /*border-radius:1rem;*/
+  background-color: rgba(213, 213, 213, 0.7);
+  font-style: italic;
+  font-size: 110%;
+  color: #666666;
+  padding: .5rem;
+}
+.add-tag-form {
+  /*float:right;*/
+}
+.add-link-toggle {
+  float: right;
+}
+.event-card {
+  border: 1px solid #aaaaaa;
+  border-radius: 1.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.event-card label {
+  color: #3c510c;
+}
+.master-event-list {
+  list-style: none;
+}
+.master-event-list li {
+  list-style: none;
+}
+.mag-1 {
+  background-color: rgba(255, 25, 25, 0.1);
+}
+.mag-2 {
+  background-color: rgba(255, 25, 25, 0.2);
+}
+.mag-3 {
+  background-color: rgba(255, 25, 25, 0.3);
+}
+.mag-4 {
+  background-color: rgba(255, 25, 25, 0.4);
+}
+.mag-5 {
+  background-color: rgba(255, 25, 25, 0.5);
+}
+.mag-6 {
+  background-color: rgba(255, 25, 25, 0.6);
+}
+.mag-7 {
+  background-color: rgba(255, 25, 25, 0.7);
+}
+.mag-8 {
+  background-color: rgba(255, 25, 25, 0.8);
+}
+.mag-9 {
+  background-color: rgba(255, 25, 25, 0.9);
+}
+.mag-10 {
+  background-color: #ff1919;
+}
+.postGridStyle {
+  border: 1px solid #d4d4d4;
+  width: 700px;
+  height: 3000px;
+}
+.input-player-name {
+  width: 30rem;
+}
+#FormAdminRosterPlayer {
+  display: block;
+}
+.ButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.player-list-container {
+  height: 500px;
+  overflow: scroll;
+}
+tr.is-associated {
+  background-color: #85A88D;
+}
+#FormAdminRosterPlayer {
+  /*display:none;*/
+}
+.roster-buttons {
+  /*display:none;*/
+}
+footer {
+  height: 100px;
+}
+.roster-table {
+  width: 56rem;
+  font-size: 120%;
+}
+.roster-table caption {
+  text-align: left;
+  letter-spacing: 1rem;
+  font-size: 118%;
+  text-decoration: underline;
+  color: #999999;
+}
+.roster-table td {
+  padding: .1rem;
+  border: 1px solid #dddddd;
+  text-align: center;
+  vertical-align: middle;
+}
+.roster-table td.row-total {
+  font-weight: bold;
+  background-color: #eeeeee;
+  text-align: left;
+  padding-left: 1rem;
+}
+.roster-table td.player-name {
+  color: darkblue;
+  text-align: left;
+}
+.roster-table .counting {
+  background-color: #eeeeee;
+  font-weight: bold;
+  color: #2b0859;
+}
+.roster-starters-table tr:nth-child(-n+4) {
+  background-color: #efefef;
+}
+.roster-closers-table tr:nth-child(-n+2) {
+  background-color: #efefef;
+}
+.rank-table {
+  width: 56rem;
+  font-size: 120%;
+}
+.rank-table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+.rank-table caption {
+  text-align: left;
+  letter-spacing: 1rem;
+  font-size: 118%;
+  text-decoration: underline;
+  color: #999999;
+}
+.rank-table td {
+  padding: .1rem;
+  border: 1px solid #dddddd;
+  text-align: center;
+  vertical-align: middle;
+}
+.rank-table td.row-total {
+  font-weight: bold;
+  background-color: #eeeeee;
+  text-align: left;
+  padding-left: 1rem;
+}
+.rank-table td.player-name {
+  color: darkblue;
+  text-align: left;
+}
+.rank-table .counting {
+  background-color: #eeeeee;
+  font-weight: bold;
+  color: #2b0859;
+}
+h1 span.grand-total {
+  font-weight: 300;
+}
+.admin-total-col {
+  text-align: left;
+  font-weight: bold;
+}
+.admin-date-col {
+  text-align: left;
+}
+#RawBatters td {
+  border-bottom: 1px solid #444444;
+}
+button:disabled {
+  background-color: green;
+}
+.general-nav-container {
+  padding: 40px;
+}
+.general-nav-container ul {
+  list-style: none;
+}
+.general-nav-container ul {
+  max-width: 240px;
+  margin: 0 auto 0 auto;
+}
+.general-nav-container ul li {
+  padding: 9px;
+  background: #eeeeee;
+  border-radius: 4px;
+}
+.general-nav-container ul li a {
+  color: #507921;
+}
+.general-total-table caption {
+  background-color: darkblue;
+  color: #ffffff;
+}
+.general-total-table td {
+  padding: .5rem;
+  border: 1px solid #dddddd;
+}
+.roster-total-summary-list {
+  width: 56rem;
+  padding: 0;
+}
+.roster-total-summary-list li {
+  display: inline;
+}
+.summary-total-container {
+  margin-right: 1rem;
+  margin-left: .4rem;
+  font-size: 110%;
+}
+.summary-total-container span {
+  font-weight: bold;
+}
+.side-nav-box {
+  border: 1px solid #cccccc;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border-radius: .5rem;
+}
+.roster-total-summary-list-container {
+  border: 1px solid #cccccc;
+  border-radius: .5rem;
+  width: 56rem;
+}

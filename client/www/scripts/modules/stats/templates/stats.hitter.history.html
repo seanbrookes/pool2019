@@ -1,0 +1,6 @@
+<div>
+  <button ng-click="getAllHittersHistory()">Get the History</button>
+  <ul>
+    <li ng-repeat="update in updatedHitterHistory | orderBy:'name'">{{update.name}}  {{update.lastUpdate}}</li>
+  </ul>
+</div>

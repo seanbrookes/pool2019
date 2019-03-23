@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html ng-app="Main" ng-controller="MainController">
+  <head>
+    <title>Baseball Pool 2018</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="./style/style.css">
+
+  </head>
+  <body>
+
+    <bbp-app-header></bbp-app-header>
+
+
+    <div ui-view autoscroll="false" class="app-module-container {{bbpCtx.currentRoster}} pos-{{bbpCtx.currentPosFilter}}"></div>
+
+    <script src="./scripts/vendor/jquery-2.1.1.min.js"></script>
+
+    <!-- angular -->
+    <script src="./scripts/vendor/angular/angular.js"></script>
+
+
+    <script src="./scripts/vendor/lodash.js"></script>
+
+    <!-- react
+    <script src="./scripts/vendor/react/react.min.js"></script>
+    <script src="./scripts/vendor/react/react-dom.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.0/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.5.0/react-dom.js"></script>
+    <!-- spin -->
+    <script src="./scripts/vendor/spin.js"></script>
+
+    <!-- d3 -->
+    <script src="./scripts/vendor/d3.js"></script>
+
+    <!-- moment -->
+    <script src="./scripts/vendor/moment.js"></script>
+
+    <!-- lb api services
+
+      LoopBack Angular SDK goes here
+
+    <script src="./scripts/modules/common/api.services.js"></script>
+
+    -->
+    <script src="scripts/modules/common/bbpool.api.js"></script>
+
+    <!--<script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>-->
+
+    <!-- angular plugins and directives -->
+    <script src="./scripts/vendor/angular/ui-utils.js"></script>
+    <script src="./scripts/vendor/angular/angular-cookies.js"></script>
+    <script src="./scripts/vendor/angular/angular-animate.js"></script>
+    <script src="./scripts/vendor/angular/angular-ui-router.js"></script>
+    <script src="./scripts/vendor/angular/angular-touch.js"></script>
+    <script src="./scripts/vendor/angular/angular-spinner.js"></script>
+    <script src="./scripts/vendor/angular/angular-sanitize.js"></script>
+    <script src="./scripts/vendor/angular/ui-bootstrap-tpls-0.12.1.js"></script>
+    <script src="./scripts/vendor/angular/angular-resource.js"></script>
+
+    <!-- main -->
+    <script src="./scripts/modules/main/main.module.js"></script>
+    <script src="./scripts/modules/main/main.controllers.js"></script>
+    <script src="./scripts/modules/main/main.services.js"></script>
+
+    <!-- common -->
+    <script src="./scripts/modules/common/common.react.js"></script>
+    <script src="./scripts/modules/common/common.module.js"></script>
+    <script src="./scripts/modules/common/common.directives.js"></script>
+
+    <!-- chat -->
+    <script src="./scripts/modules/chat/chat.module.js"></script>
+    <script src="./scripts/modules/chat/chat.directives.js"></script>
+    <script src="./scripts/modules/chat/chat.controllers.js"></script>
+    <script src="./scripts/modules/chat/chat.services.js"></script>
+
+    <!-- roster -->
+    <script  type="text/jsx" src="./scripts/modules/roster/roster.react.js"></script>
+    <script src="./scripts/modules/roster/roster.module.js"></script>
+    <script src="./scripts/modules/roster/roster.controllers.js"></script>
+    <script src="./scripts/modules/roster/roster.services.js"></script>
+    <script src="./scripts/modules/roster/roster.directives.js"></script>
+
+    <!-- auth -->
+    <script src="./scripts/modules/auth/auth.module.js"></script>
+    <script src="./scripts/modules/auth/auth.controllers.js"></script>
+    <!--<script src="./scripts/modules/auth/auth.services.js"></script>-->
+    <!--<script src="./scripts/modules/auth/auth.directives.js"></script>-->
+
+    <!-- draft -->
+    <script src="./scripts/modules/draft/draft.module.js"></script>
+    <script src="./scripts/modules/draft/draft.controllers.js"></script>
+    <script src="scripts/modules/draft/draft.services.js"></script>
+    <script src="./scripts/modules/draft/draft.directives.js"></script>
+
+    <!-- admin -->
+    <script src="./scripts/modules/admin/admin.module.js"></script>
+    <script src="./scripts/modules/admin/admin.controllers.js"></script>
+    <script src="./scripts/modules/admin/admin.services.js"></script>
+    <script src="./scripts/modules/admin/admin.directives.js"></script>
+
+    <!-- chat -->
+    <script src="./scripts/modules/chat/chat.module.js"></script>
+    <script src="./scripts/modules/chat/chat.controllers.js"></script>
+    <script src="./scripts/modules/chat/chat.services.js"></script>
+    <script src="./scripts/modules/chat/chat.directives.js"></script>
+
+    <!-- mlb -->
+    <script src="./scripts/modules/mlb/mlb.module.js"></script>
+    <script src="./scripts/modules/mlb/mlb.controllers.js"></script>
+    <script src="./scripts/modules/mlb/mlb.services.js"></script>
+    <script src="./scripts/modules/mlb/mlb.directives.js"></script>
+
+    <!-- stats -->
+    <script src="./scripts/modules/stats/stats.module.js"></script>
+    <script src="./scripts/modules/stats/stats.controllers.js"></script>
+    <script src="./scripts/modules/stats/stats.services.js"></script>
+    <script src="./scripts/modules/stats/stats.react.js"></script>
+    <script src="./scripts/modules/stats/stats.directives.js"></script>
+
+    <!-- charts -->
+    <script src="./scripts/modules/charts/charts.module.js"></script>
+    <script src="./scripts/modules/charts/charts.controllers.js"></script>
+    <script src="./scripts/modules/charts/charts.services.js"></script>
+    <script src="./scripts/modules/charts/charts.directives.js"></script>
+
+
+    <!-- hello-world -->
+    <script src="./scripts/modules/hello-world/hello-world.module.js"></script>
+    <script src="./scripts/modules/hello-world/hello-world.controllers.js"></script>
+    <script src="./scripts/modules/hello-world/hello-world.directives.js"></script>
+
+  </body>
+</html>

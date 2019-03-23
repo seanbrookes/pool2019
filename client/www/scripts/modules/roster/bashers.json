@@ -1,0 +1,297 @@
+[
+  {
+    "email": "seanbrookes@beachair.ca",
+    "name": "Bashers",
+    "owner": "Sean Brookes",
+    "players": [
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "McCann",
+        "pos": "C",
+        "team": "NYY",
+        "mlbid": "435263"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Swihart",
+        "pos": "C",
+        "team": "BOS",
+        "mlbid": "596119"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Jose Abreu",
+        "pos": "1B",
+        "team": "CHA",
+        "mlbid": "547989",
+        "roster": "bashers",
+        "index": 5
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Joe Mauer",
+        "pos": "1B",
+        "team": "MIN",
+        "mlbid": "408045"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Robinson Cano",
+        "pos": "2B",
+        "team": "SEA",
+        "mlbid": "429664",
+        "roster": "bashers",
+        "index": 3
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "John Schoop",
+        "pos": "2B",
+        "team": "BAL",
+        "mlbid": "570731"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Manny Machado",
+        "pos": "3B",
+        "team": "BAL",
+        "mlbid": "592518",
+        "roster": "bashers",
+        "index": 27
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Carlos Santana",
+        "pos": "3B",
+        "team": "CLE",
+        "mlbid": "467793"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Xander Bogaerts",
+        "pos": "SS",
+        "team": "BOS",
+        "mlbid": "593428",
+        "roster": "bashers",
+        "index": 25
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Ben Zobrist",
+        "pos": "SS",
+        "team": "OAK",
+        "mlbid": "450314"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Alex Gordon",
+        "pos": "LF",
+        "team": "KC",
+        "mlbid": "460086",
+        "roster": "bashers",
+        "index": 20
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Melky Cabrera",
+        "pos": "LF",
+        "team": "CHA",
+        "mlbid": "466320"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Austin Jackson",
+        "pos": "CF",
+        "team": "DET",
+        "mlbid": "457706",
+        "roster": "bashers",
+        "index": 23
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Colby Rasmus",
+        "pos": "CF",
+        "team": "HOU",
+        "mlbid": "458675"
+      },
+      {
+        "name": "George Springer",
+        "pos": "RF",
+        "team": "HOU",
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "mlbid": "543807"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Oswaldo Arcia",
+        "pos": "RF",
+        "team": "MIN",
+        "mlbid": "542455",
+        "roster": "bashers",
+        "index": 29
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "LaRoche",
+        "pos": "DH",
+        "team": "CHA",
+        "mlbid": "425560"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "bashers",
+        "name": "Alex Rodriquez",
+        "pos": "DH",
+        "team": "NYY",
+        "mlbid": "121347"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Kelly Kluber",
+        "pos": "SP",
+        "team": "CLE",
+        "mlbid": "446372"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Carlos Carasco",
+        "pos": "SP",
+        "team": "CLE",
+        "mlbid": "471911"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Alex Cobb",
+        "pos": "SP",
+        "team": "TB",
+        "mlbid": "502171"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Rick Porcello",
+        "pos": "SP",
+        "team": "BOS",
+        "mlbid": "519144"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Quintana",
+        "pos": "SP",
+        "team": "CHA",
+        "mlbid": "500779"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Houston Street",
+        "pos": "RP",
+        "team": "LAA",
+        "mlbid": "434718"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Neftali Feliz",
+        "pos": "RP",
+        "team": "TEX",
+        "mlbid": "491703"
+      },
+      {
+        "status": "protected",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Chris Archer",
+        "pos": "SP",
+        "team": "TB",
+        "mlbid": "502042"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "Tanaka",
+        "pos": "SP",
+        "team": "NYY",
+        "mlbid": "547888"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "bashers",
+        "name": "J Soria",
+        "pos": "RP",
+        "team": "DET",
+        "mlbid": "465657"
+      },
+      {
+        "name": "B Buxton",
+        "pos": "CF",
+        "team": "MIN",
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "hitter",
+        "mlbid": "621439"
+      }
+    ],
+    "slug": "bashers",
+    "year": 2014,
+    "editPlayer": {
+      "draftStatus": "roster",
+      "status": "protected",
+      "posType": "hitter",
+      "name": "Melkey Cabrerra",
+      "pos": "LF",
+      "team": "TOR",
+      "mlbid": "466320",
+      "roster": "bashers",
+      "index": 13
+    }
+  }
+]

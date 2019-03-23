@@ -1,0 +1,16 @@
+<div class="side-nav-container">
+  <table class="nav-totals">
+    <tr class="{{grandTotal.roster}}" ng-repeat="grandTotal in grandTotals | orderBy:['-grandTotal'] | unique:'roster'">
+      <td>
+        <a href="#roster/{{ grandTotal.roster }}">{{ grandTotal.roster }}</a>
+      </td>
+      <td>
+        <span class="total-value">{{ grandTotal.grandTotal }}</span>
+      </td>
+      <td class="total-delta">
+        <span>{{ grandTotal.grandTotalDelta }}</span>
+      </td>
+
+    </tr>
+  </table>
+</div>

@@ -1,0 +1,108 @@
+.roster-view--title {
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  font-size: 28px;
+  letter-spacing: .75rem;
+  font-weight: lighter;
+  color: #0000cc;
+
+}
+
+.summary-total-container {
+  margin-left: 1.4rem;
+  color: #777777;
+  padding: .3rem;
+  span {
+    display: inline-block;
+    padding: .3rem;
+    font-weight: 600;
+    color: #0000cc;
+  }
+}
+
+.roster-closers-table {
+  margin-bottom: 5rem;
+
+}
+.roster-table {
+
+  caption {
+    text-align: left;
+    padding-left: 2rem;
+  }
+
+  td.pos-col {
+    width: 2rem;
+  }
+  td.name-col {
+    width: 11rem;
+  }
+  td.team-col {
+    width: 4rem;
+  }
+  td.points-col {
+    width: 3rem;
+  }
+
+  td.total-col {
+    padding-left: 1rem;
+    width: 4rem;
+  }
+  tr.counting {
+    background-color: #eeeeee;
+    color: #0000be;
+  }
+  tr.not-counting {
+    background-color: #ffffff;
+    color: #777777;
+  }
+
+
+
+  .roster-pos-total {
+    font-weight: 700;
+    text-decoration: underline;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding-left: 1rem;
+  }
+}
+
+
+table.PreDraftRosterTable {
+  border-spacing: 0;
+  margin-right: 1rem;
+  border: 1px solid #dddddd;
+}
+.PreDraftRosterTable tr.protected-row {
+  background-color: #e2ffd8;
+
+  &.stripe {
+    background-color: #c7e1bf;
+
+  }
+}
+.PreDraftRosterTable tr.protected-warning-row {
+  background-color: #fff0b3;
+  &.stripe {
+    background-color: #e4d5a2;
+  }
+}
+.PreDraftRosterTable tr.unprotected-row {
+  background-color: #ffffff;
+
+  &.stripe {
+    background-color: #eeeeee;
+  }
+
+  .drafted {
+    color: #0000cc;
+  }
+  .prospect {
+    color: #06852a;
+  }
+}
+.PreDraftRosterTable tr button {
+  background: transparent;
+  border: 0;
+}

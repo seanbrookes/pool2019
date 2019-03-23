@@ -1,0 +1,269 @@
+
+tr.current-pick {
+  background-color: #ecdbbf;
+}
+.fix-top & {
+  top:0;
+
+  position: fixed;
+
+}
+.DraftBoard_CurrentPickTitle {
+  padding:.5rem;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  width: 100%;
+}
+.nav-pills {
+  background: #ffffff;
+
+}
+.blink {
+  animation: blink-animation 6s 2s  infinite;
+  -webkit-animation: blink-animation 6s 2s  infinite;
+}
+@keyframes blink-animation {
+  //to {
+  //  visibility: hidden;
+  //}
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink-animation {
+  //to {
+  //  visibility: hidden;
+  //}
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-inout {
+  -webkit-transition: linear 2s;
+  -moz-transition: linear 2s;
+  -ms-transition: linear 2s;
+  -o-transition: linear 2s;
+  transition: linear 2s;
+}
+.fade-inout.ng-enter {
+  opacity: 0;
+}
+.fade-inout.ng-enter-active {
+  opacity: 1;
+}
+.fade-inout.ng-leave {
+  opacity: 1;
+}
+.fade-inout.ng-leave-active {
+  opacity: 0;
+}
+
+.PreDraftRosterTable {
+  margin:0 2rem 0 2rem;
+  font-size:80%;
+  border:1px solid #0d3349;
+
+  caption {
+    letter-spacing: .4rem;
+    background-color: #0d3349;
+    color:#ffffff;
+  }
+
+  tbody {
+    tr:nth-child(even) {
+      background-color: #efefef;
+
+    }
+    td {
+      color:#888888;
+    }
+    tr.draft-protected:nth-child(even) {
+        background-color: #dfdfdf;
+
+    }
+    tr.draft-protected {
+
+      td {
+        color: #2acb52;
+      }
+
+    }
+    tr.draft-overprotected {
+
+      td {
+        color: #cbb03a;
+      }
+
+    }
+    tr.draft-bubble {
+
+      td {
+        color: #3d4ecb;
+      }
+
+    }
+
+  }
+}
+.DefaultChatWindow {
+  max-width: 40rem;
+  border:1px solid blue;
+
+}
+.DraftPickFormContainer {
+  padding:1rem;
+  border:1px solid #eeeeee;
+  border-radius:1rem;
+}
+.DraftPickRow {
+
+}
+.DraftPickRow--odd {
+  background-color: #eeeeee;
+  .DraftPickCell {
+    border:1px solid #ffffff;
+  }
+}
+.DraftPickCell {
+
+  border:1px solid #eeeeee;
+
+  &.DraftPickCell__Round {
+    width:3rem;
+    padding-left:.2rem;
+
+  }
+  &.DraftPickCell__PickNumber {
+    width:3rem;
+    padding-left:.2rem;
+  }
+  &.DraftPickCell__Roster {
+    width:10rem;
+  }
+  &.DraftPickCell__Name {
+    width:26rem;
+  }
+}
+
+
+
+
+.RosterDiamondContainer {
+  position:relative;
+  border:1px solid black;
+  width:56rem;
+  height:48rem;
+  background: url('/images/diamond.svg') no-repeat center center;
+  background-size: cover;
+
+  .PositionContainer {
+
+    ul {
+      list-style: none;
+      padding:0;
+      margin:0;
+
+      li {
+        text-decoration: underline;
+      }
+      li.draft-protected {
+
+        color: #2acb52;
+
+      }
+      li.draft-overprotected {
+
+        color: #cbb03a;
+
+
+      }
+      li.draft-bubble {
+
+
+        color: #3d4ecb;
+
+
+      }
+    }
+  }
+
+  .LeftFieldContainer {
+    position:absolute;
+    top:4rem;
+    left:2rem;
+  }
+  .CenterFieldContainer {
+    position:absolute;
+    top:3rem;
+    left:26rem;
+  }
+  .RightFieldContainer {
+    position:absolute;
+    top:4rem;
+    right:2rem;
+  }
+
+  .ThreeBContainer {
+    position:absolute;
+    top:18rem;
+    left:2rem;
+  }
+  .TwoBContainer {
+    position:absolute;
+    top:10rem;
+    left:26rem;
+  }
+  .OneBContainer {
+    position:absolute;
+    top:18rem;
+    right:2rem;
+  }
+  .SSContainer {
+    position:absolute;
+    top:11rem;
+    left:10rem;
+  }
+  .StarterContainer {
+    position:absolute;
+    top:20rem;
+    left:26rem;
+  }
+  .CatcherContainer {
+    position:absolute;
+    top:42rem;
+    left:26rem;
+  }
+  .DHContainer {
+    position:absolute;
+    top:36rem;
+    right:10rem;
+  }
+  .RelieverContainer {
+    position:absolute;
+    top:32rem;
+    left:8rem;
+  }
+
+
+}
+.RosterDiamondTitle {
+  font-size:110%;
+  font-weight: 400;
+  padding:.2rem;
+  margin:0;
+  background-color:darkblue;
+  color:#ffffff;
+}
+

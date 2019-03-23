@@ -1,0 +1,277 @@
+[
+  {
+    "email": "jcmaeland@bigpond.com",
+    "name": "Mashers",
+    "owner": "Chris Maeland",
+    "players": [
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Vogt",
+        "pos": "C",
+        "team": "OAK",
+        "mlbid": "519390"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Miguel Cabrera",
+        "pos": "1B",
+        "team": "DET",
+        "mlbid": "408234",
+        "roster": "mashers",
+        "index": 20
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Eric Hosmer",
+        "pos": "1B",
+        "team": "KC",
+        "mlbid": "543333"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Brian Dozier",
+        "pos": "2B",
+        "team": "MIN",
+        "mlbid": "572821",
+        "roster": "mashers",
+        "index": 12
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Dustin Pedroia",
+        "pos": "2B",
+        "team": "BOS",
+        "mlbid": "456030"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Kyle Seager",
+        "pos": "3B",
+        "team": "SEA",
+        "mlbid": "572122",
+        "roster": "mashers",
+        "index": 13
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Chase Headly",
+        "pos": "3B",
+        "team": "NYY",
+        "mlbid": "452104"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Danny Santana",
+        "pos": "SS",
+        "team": "MIN",
+        "mlbid": "542454"
+      },
+      {
+        "status": "regular",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Alexi Ramirez",
+        "pos": "SS",
+        "team": "CHA",
+        "mlbid": "493351",
+        "draftStatus": "roster"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Pierce",
+        "pos": "LF",
+        "team": "BAL",
+        "mlbid": "456665"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Kiermaier",
+        "pos": "CF",
+        "team": "TB",
+        "mlbid": "595281"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Betts",
+        "pos": "CF",
+        "team": "BOS",
+        "mlbid": "605141"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Avisail Garcia",
+        "pos": "RF",
+        "team": "CHA",
+        "mlbid": "541645",
+        "roster": "mashers",
+        "index": 7
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Calhoun",
+        "pos": "RF",
+        "team": "LAA",
+        "mlbid": "594777"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "pos": "DH",
+        "team": "HOU",
+        "name": "Chris Carter",
+        "mlbid": "474892",
+        "roster": "mashers",
+        "index": 27
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Vargas",
+        "pos": "DH",
+        "team": "MIN",
+        "mlbid": "573627"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "Hahn",
+        "pos": "SP",
+        "team": "OAK",
+        "mlbid": "534910"
+      },
+      {
+        "status": "protected",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "Jared Weaver",
+        "pos": "SP",
+        "team": "LAA",
+        "mlbid": "450308"
+      },
+      {
+        "status": "protected",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "G Richards",
+        "pos": "SP",
+        "team": "LAA",
+        "mlbid": "572070"
+      },
+      {
+        "status": "protected",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "Chris Tillman",
+        "pos": "SP",
+        "team": "BAL",
+        "mlbid": "501957"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "Zack Britton",
+        "pos": "RP",
+        "team": "BAL",
+        "mlbid": "502154"
+      },
+      {
+        "status": "protected",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "Glen Perkins",
+        "pos": "RP",
+        "team": "MIN",
+        "mlbid": "450282"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "H. Iwakuma",
+        "pos": "SP",
+        "team": "SEA",
+        "mlbid": "547874"
+      },
+      {
+        "draftStatus": "roster",
+        "status": "protected",
+        "posType": "hitter",
+        "name": "Adam Jones",
+        "pos": "CF",
+        "team": "BAL",
+        "mlbid": "430945",
+        "roster": "stallions",
+        "index": 1,
+        "slug": "mashers"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Semien",
+        "pos": "SS",
+        "team": "CHA",
+        "mlbid": "543760"
+      },
+      {
+        "status": "drafted",
+        "posType": "pitcher",
+        "slug": "mashers",
+        "name": "Danny Duffy",
+        "pos": "SP",
+        "team": "KC",
+        "mlbid": "518633"
+      },
+      {
+        "status": "drafted",
+        "posType": "hitter",
+        "slug": "mashers",
+        "name": "Yan Gomes",
+        "pos": "C",
+        "team": "CLE",
+        "mlbid": "543228"
+      },
+      {
+        "name": "Dallas Keuchel",
+        "pos": "SP",
+        "team": "HOU",
+        "draftStatus": "roster",
+        "status": "regular",
+        "posType": "pitcher",
+        "mlbid": "572971"
+      }
+    ],
+    "slug": "mashers",
+    "year": 2014
+  }
+]

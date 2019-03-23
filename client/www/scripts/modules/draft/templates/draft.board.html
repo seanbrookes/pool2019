@@ -1,0 +1,101 @@
+<div data-id="draft-board-container" ng-keydown="pauseReload()">
+  <!--<div class="postGridStyle" ng-grid="draftGridOptions"></div>-->
+  <p id="CurrentPickTitle" class="DraftBoard_CurrentPickTitle">current pick: <span class="DraftPickFormContainer_CurrentPickTitle blink">{{draftCtx.currentPickRoster}}</span></p>
+  <div class="fade-inout" ng-if="isShowBoard">
+    <table class="draft-table">
+      <thead>
+      <tr>
+        <th>
+          rnd
+        </th>
+        <th>
+          pk
+        </th>
+        <th>
+          roster
+        </th>
+        <th>
+          player
+        </th>
+        <th>
+          pos
+        </th>
+        <th>
+          team
+        </th>
+        <th>
+
+        </th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-class="getDraftRowClass(pick)" class="DraftPickRow" ng-repeat="pick in draftPicks | orderBy:['pickNumber'] ">
+        <td class="DraftPickCell DraftPickCell__Round">
+          {{ pick.round }}
+        </td>
+        <td class="DraftPickCell DraftPickCell__PickNumber">
+          <button class="SilentButton" ng-click="clearPick(pick)">{{ pick.pickNumber }}</button>
+        </td>
+        <td class="DraftPickCell DraftPickCell__Roster">
+          <!--<button class="SilentButton" ng-click="postToRoster(pick.roster, pick)">{{pick.roster}}</button>-->
+
+          <!--{{pick.roster}}-->
+          <select  ng-change="updatePickPlayer(pick)" ng-model="pick.roster">
+            <option value="bashers">bashers</option>
+            <option value="mashers">mashers</option>
+            <option value="rallycaps">rallycaps</option>
+            <option value="stallions">stallions</option>
+          </select>
+        </td>
+        <td class="DraftPickCell DraftPickCell__Name">
+          <input type="text" ng-blur="updatePickPlayer(pick)" ng-model="pick.name" />
+        </td>
+        <td class="DraftPickCell DraftPickCell__Pos">
+          <select id="PosSelect" ng-change="updatePickPlayer(pick)" class="select-pos pick-property-edit" ng-model="pick.pos"  data-type="pos">
+            <option value="">-</option>
+            <option value="C">C</option>
+            <option value="1B">1B</option>
+            <option value="2B">2B</option>
+            <option value="3B">3B</option>
+            <option value="SS">SS</option>
+            <option value="LF">LF</option>
+            <option value="CF">CF</option>
+            <option value="RF">RF</option>
+            <option value="DH">DH</option>
+            <option value="SP">SP</option>
+            <option value="RP">RP</option>
+          </select>
+        </td>
+        <td class="DraftPickCell DraftPickCell__Team">
+          <select class="select-team pick-property-edit"  ng-change="updatePickPlayer(pick)" ng-model="pick.team" data-type="team">
+            <option value="">--</option>
+            <option value="BAL">BAL</option>
+            <option value="BOS">BOS</option>
+            <option value="CHA">CHA</option>
+            <option value="CLE">CLE</option>
+            <option value="DET">DET</option>
+            <option value="HOU">HOU</option>
+            <option value="KC">KC</option>
+            <option value="LAA">LAA</option>
+            <option value="MIN">MIN</option>
+            <option value="NYY">NYY</option>
+            <option value="OAK">OAK</option>
+            <option value="SEA">SEA</option>
+            <option value="TB">TB</option>
+            <option value="TEX">TEX</option>
+            <option value="TOR">TOR</option>
+          </select>
+        </td>
+        <td>
+          <!--<button ng-click="editPick(pick)" ng-model="pick">edit</button>-->
+          <!--<button ng-click="deletePick(pick)" ng-model="pick">delete</button>-->
+        </td>
+      </tr>
+      </tbody>
+
+    </table>
+  </div>
+
+</div>
+

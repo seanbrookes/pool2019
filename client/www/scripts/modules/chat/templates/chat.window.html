@@ -1,0 +1,22 @@
+<div data-id="chat-main-container" class="DefaultChatWindow Layout">
+  <div ng-show="isChatDisabled()">
+
+      <a href="/#login">login</a>
+
+  </div>
+
+  <div ng-show="!isChatDisabled()">
+    <header>
+      <div> you are logged in as {{currentUser}}</div>
+    </header>
+    <div class="ChatTranscriptContainer">
+      <div ng-repeat="message in chatMessages">{{message.message}}</div>
+    </div>
+    <div class="ChatMessageInputContainer Layout">
+      <textarea ng-model="currentChatMessage"></textarea>
+
+      <button ng-disabled="isChatDisabled()" ng-click="postChatMessage()">send</button>
+    </div>
+  </div>
+
+</div>

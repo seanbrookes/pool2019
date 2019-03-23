@@ -1,0 +1,98 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ]
+  },
+  "draftpick": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "roster": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "rawpitcherstats": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "rawpitcherids": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "rawbatterids": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "dailybatterstat": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "dailypitcherstat": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "statupdate": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "totals": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "chatmessage": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "rosterplayer": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "mlbbatters": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "mlbpitchers": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "hotHitter": {
+    "dataSource": "pool2018",
+    "public": true,
+    "$promise": {},
+    "$resolved": true
+  },
+  "rankSnapshot": {
+    "dataSource": "pool2018",
+    "public": true
+  }
+}

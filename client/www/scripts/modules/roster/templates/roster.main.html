@@ -1,0 +1,176 @@
+<div class="Layout NoWrap">
+  <common-sidebar-nav></common-sidebar-nav>
+
+  <div class="main-content-container">
+    <h2>{{ currentRosterName }} &nbsp;</h2>
+    <div class="roster-total-summary-list-container">
+      <ul class="roster-total-summary-list">
+        <li class="summary-total-container">total: <span>{{ grandTotal }}</span></li>
+        <li class="summary-total-container">batters: <span>{{ batterTotal }}</span></li>
+        <li class="summary-total-container">starters: <span>{{ starterTotal }}</span></li>
+        <li class="summary-total-container">closers: <span>{{ closerTotal }}</span></li>
+      </ul>
+    </div>
+    <table class="roster-table roster-hitters-table" id="HitterTable">
+      <caption>Batters</caption>
+      <thead>
+      <tr>
+        <th>
+          pos
+        </th>
+        <th>
+          name
+        </th>
+        <th>
+          team
+        </th>
+        <th>
+          runs
+        </th>
+        <th>
+          hits
+        </th>
+        <th>
+          hr
+        </th>
+        <th>
+          rbi
+        </th>
+        <th>
+          sb
+        </th>
+        <th>
+          total
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="batter in batters" class="{{ batter.pos }}" ng-class="{'counting' : batter.counting}">
+        <td>
+
+          {{ batter.pos }}
+        </td>
+        <td class="player-name">{{ batter.name }}</td>
+        <td>{{ batter.team }}</td>
+        <td>{{ batter.r }}</td>
+        <td>{{ batter.h }}</td>
+        <td>{{ batter.hr }}</td>
+        <td>{{ batter.rbi }}</td>
+        <td>{{ batter.sb }}</td>
+        <td class="row-total">{{ batter.total }}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="8"></td>
+        <td><div class="roster-pos-total" id="RosterBatterTotal">{{ batterTotal }}</div></td>
+      </tr>
+      </tfoot>
+    </table>
+    <table class="roster-table roster-starters-table" id="StarterTable">
+      <caption>Starters</caption>
+      <thead>
+      <tr>
+        <th>
+          pos
+        </th>
+        <th>
+          name
+        </th>
+        <th>
+          team
+        </th>
+        <th>
+          w
+        </th>
+        <th>
+          l
+        </th>
+        <th>
+          ip
+        </th>
+        <th>
+          k
+        </th>
+        <th>
+          total
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="starter in starters | orderBy:['-total']">
+        <td>{{ starter.pos }}</td>
+        <td class="player-name">{{ starter.name }}</td>
+        <td>{{ starter.team }}</td>
+        <td>{{ starter.w }}</td>
+        <td>{{ starter.l }}</td>
+        <td>{{ starter.ip }}</td>
+        <td>{{ starter.k }}</td>
+        <td class="row-total">{{ starter.total }}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="7"></td>
+        <td><div class="roster-pos-total" id="RosterStarterTotal">{{ starterTotal }}</div></td>
+      </tr>
+      </tfoot>
+    </table>
+    <table class="roster-table roster-closers-table" id="CloserTable">
+      <caption>Closers</caption>
+      <thead>
+      <tr>
+        <th>
+          pos
+        </th>
+        <th>
+          name
+        </th>
+        <th>
+          team
+        </th>
+        <th>
+          w
+        </th>
+        <th>
+          l
+        </th>
+        <th>
+          ip
+        </th>
+        <th>
+          k
+        </th>
+        <th>
+          saves
+        </th>
+        <th>
+          total
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr ng-repeat="closer in closers | orderBy:['-total']">
+        <td>{{ closer.pos }}</td>
+        <td class="player-name">{{ closer.name }}</td>
+        <td>{{ closer.team }}</td>
+        <td>{{ closer.w }}</td>
+        <td>{{ closer.l }}</td>
+        <td>{{ closer.ip }}</td>
+        <td>{{ closer.k }}</td>
+        <td>{{ closer.sv }}</td>
+        <td class="row-total">{{ closer.total }}</td>
+      </tr>
+      </tbody>
+      <tfoot>
+      <tr>
+        <td colspan="8"></td>
+        <td><div class="roster-pos-total" id="RosterCloserTotal">{{ closerTotal }}</div></td>
+      </tr>
+      </tfoot>
+    </table>
+  </div>
+
+
+
+</div>

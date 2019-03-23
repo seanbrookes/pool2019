@@ -1,0 +1,70 @@
+<div class="protected-list-container">
+    <div  ng-repeat="roster in protectedRrosters"
+          ng-hide="currentRoster !== roster.slug"
+          heading="{{ roster.name }}">
+      <div class="col-md-9 col-md-offset-2">
+        <h2>{{ roster.name }}</h2>
+        <div data-ui-type="table">
+          <div data-ui-type="row">
+            <div data-ui-type="cell" class="protected-col">protected</div>
+            <div data-ui-type="cell">
+
+            </div>
+            <div data-ui-type="cell" class="pos-col">
+
+            </div>
+            <div data-ui-type="cell" class="team-col">
+
+            </div>
+          </div>
+          <div ng-repeat="player in roster.players " ng-class="getPlayerRowClass($index)" data-ui-type="row">
+            <div data-ui-type="cell" class="protected-col">
+              <input type="checkbox"
+                     ng-change="upateProtectedStatus()"
+                     ng-model="player.status"
+                     ng-disabled="isDisabled(roster.slug)"
+                     ng-true-value="protected" />
+            </div>
+            <div data-ui-type="cell">
+              {{player.name}}
+            </div>
+            <div data-ui-type="cell" class="pos-col">
+              {{player.pos}}
+            </div>
+            <div data-ui-type="cell" class="team-col">
+              {{player.team}}
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+</div>
+<!--<div class="container-fluid">-->
+  <!--<div class="row">-->
+    <!--<div ng-repeat="roster in rosters" class="col-md-3">-->
+      <!--{{ roster.name }}-->
+      <!--<div data-ui-type="table">-->
+        <!--<div ng-repeat="player in roster.players" data-ui-type="row">-->
+          <!--<div data-ui-type="cell">-->
+            <!--<input type="checkbox"-->
+                   <!--ng-change="upateProtectedStatus()"-->
+                   <!--ng-model="player.status"-->
+                   <!--ng-true-value="protected" />-->
+            <!--{{player.status}}-->
+          <!--</div>-->
+          <!--<div data-ui-type="cell">-->
+            <!--{{player.name}}-->
+          <!--</div>-->
+          <!--<div data-ui-type="cell">-->
+            <!--{{player.pos}}-->
+          <!--</div>-->
+          <!--<div data-ui-type="cell">-->
+            <!--{{player.team}}-->
+          <!--</div>-->
+        <!--</div>-->
+      <!--</div>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->

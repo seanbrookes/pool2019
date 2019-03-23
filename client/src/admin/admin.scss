@@ -1,0 +1,19 @@
+.mlb-player-list {
+  height: 700px;
+  overflow-y: scroll;
+}
+
+.admin-roster-row {
+  background-color: #ffffff;
+
+  &.stripe {
+    background-color: #eeeeee;
+  }
+}
+
+.admin-roster-table {
+
+  td {
+    padding: .4rem;
+  }
+}

@@ -1,0 +1,22 @@
+<div data-id="MLBContainer">
+  <div>
+    <span>mlb : {{mlbCtx.currentMlbPlayer.name}}:{{mlbCtx.currentMlbPlayer.mlbid}}</span>
+    <span>roster player: {{mlbCtx.currentRosterPlayer.name}}</span>
+    <button ng-click="mapId()">save map</button>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h2>Roster</h2>
+      <bbp-roster-id-map-list></bbp-roster-id-map-list>
+    </div>
+    <div class="col-sm-4">
+      <h2>Hitters</h2>
+      <bbp-mlb-hitters-list></bbp-mlb-hitters-list>
+    </div>
+    <div class="col-sm-4">
+      <h2>Pitchers</h2>
+      <bbp-mlb-pitchers-list></bbp-mlb-pitchers-list>
+    </div>
+  </div>
+</div>
+

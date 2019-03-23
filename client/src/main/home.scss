@@ -1,0 +1,51 @@
+.side-bar--container {
+  background-color: #f1f1f1;
+}
+.totals-summary--table {
+  margin-right: 3rem;
+  margin-bottom: 2rem;
+
+  tr {
+    &.stripe {
+      background-color: #eeeeee;
+    }
+
+    .total-col {
+      color: #0000cc;
+      font-weight: 500;
+      padding-left: 1rem;
+    }
+  }
+}
+.whos-hot--container {
+  table {
+    margin-left: 1rem;
+    td {
+      padding: .3rem;
+    }
+  }
+  tr.stripe {
+    background-color: #eeeeee;
+  }
+  tr.normal {
+    background-color: #ffffff;
+  }
+}
+.top-ten--table {
+  border: 1px solid #dddddd;
+  td {
+    padding: .3rem;
+  }
+  .top-ten--row {
+    background-color: #e3f3ff;
+
+    &.stripe {
+      background-color: #d1e1f6;
+    }
+  }
+  .non-top-ten--row {
+    &.stripe {
+      background-color: #eeeeee;
+    }
+  }
+}

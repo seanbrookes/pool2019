@@ -1,0 +1,38 @@
+<header class="PageHeaderContainer Layout Spread">
+  <nav class="{{headerCtx.currentRoster}}" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="Layout">
+      <div class="branding__container">
+        <a class="branding__link" ui-sref="home">
+          <img class="branding__logo" src="./images/logo.png" alt="logo" />
+        </a>
+      </div>
+
+      <ul class="mainnav mainnav-list">
+        <li ng-class="bbpCtx.amIActive('bashers')">
+          <a class="navbar__link bashers" ui-sref="roster({ slug: 'bashers' })">Bashers</a>
+        </li>
+        <li ng-class="bbpCtx.amIActive('mashers')">
+          <a class="navbar__link mashers" ui-sref="roster({ slug: 'mashers' })">Mashers</a>
+        </li>
+        <li ng-class="bbpCtx.amIActive('rallycaps')">
+          <a class="navbar__link rallycaps" ui-sref="roster({ slug: 'rallycaps' })">Rally Caps</a>
+        </li>
+        <li ng-class="bbpCtx.amIActive('stallions')">
+          <a class="navbar__link stallions" ui-sref="roster({ slug: 'stallions' })">Stallions</a>
+        </li>
+        <li ng-class="bbpCtx.amIActive('charts')">
+        <!--<a class="navbar__link" ui-sref="rosters">Rosters</a>-->
+          <a class="navbar__link" ui-sref="charts">Charts</a>
+        </li>
+        <li ng-class="bbpCtx.amIActive('diamond')">
+          <a class="navbar__link" ui-sref="diamond">Diamond</a>
+        </li>
+        <li ng-class="bbpCtx.amIActive('draft')">
+          <a class="navbar__link" ui-sref="draft">Draft</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="last-update">Last update: <span>{{ headerCtx.lastUpdate }}</span></div>
+</header>

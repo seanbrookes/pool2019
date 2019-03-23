@@ -1,0 +1,9 @@
+<div>
+  <bbp-player-totals-chart player="player"></bbp-player-totals-chart>
+  <ul>
+    <li ng-repeat="player in allPlayers">
+      <button ng-click="getPlayerHistory(player)">{{player.name}} {{player.roster}}</button>
+       {{player.pos}}
+    </li>
+  </ul>
+</div>
