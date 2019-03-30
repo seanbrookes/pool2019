@@ -56,8 +56,8 @@ class DraftBoard extends Component {
         this.setCurrentPick();
       });
     }
-   // this.startPolling();
-//    this.props.onPollDraftPicks();
+   this.startPolling();
+   this.props.onPollDraftPicks();
     // start the polling
   }
   componentWillReceiveProps(nextProps) {
