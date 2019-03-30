@@ -46,6 +46,7 @@
     "request": "~2.54.0",
     "serve-favicon": "^2.0.1",
     "style-loader": "^0.20.3",
+    "styled-components": "^4.2.0",
     "thunk": "0.0.1"
   },
   "devDependencies": {

@@ -1,11 +1,32 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import { DraftPickRowItem, PickTimer } from '../components';
 import { fetchDraftPicks, updateDraftPick, pollDraftPicks } from '../actions/draftActions';
 
 import { updateRoster, fetchRosters } from '../../rosters/actions/rostersActions';
+
+const DraftTable = styled.table`
+  width: 100%;
+  border: 1px solid #eeeeee;
+
+  .DraftPickRow.odd-round {
+    background-color: #efefef;
+  }
+  .DraftPickRow.even-round {
+    background-color: #e1e1e1;
+  }
+  .DraftPickRow--odd.odd-round {
+    background-color: #ffffff;
+  }
+  .DraftPickRow--odd.even-round {
+    background-color: #cecece;
+  }
+
+
+`;
 
 class DraftBoard extends Component {
   constructor(props) {
@@ -249,11 +270,38 @@ class DraftBoard extends Component {
 
 
 
+    let roundCountIndex = 0;
+    let roundClass = 'even-round';
+    const getRoundClass = (index) => {
+      if (index === 0) {
+        return roundClass;
+      }
+      roundCountIndex++;
+
+      console.log('|  index', index);
+      if (roundCountIndex === 4) {
+        if (roundClass === 'odd-round') {
+          roundClass = 'even-round';
+        }
+        else {
+          roundClass = 'odd-round';
+        }
+        roundCountIndex = 0;
+      }
+
+      return roundClass;
+
+    }
+    const isOdd = (num) => { return num % 2;};
     if (this.props.draftPicks) {
-      this.props.draftPicks.map((pick) => {
+      this.props.draftPicks.map((pick, index) => {
+        const roundClass = getRoundClass(index);
+        console.log('|  round class', roundClass);
         draftPicksEl.push(
           <DraftPickRowItem
             key={pick.id}
+            isOdd={isOdd(index)}
+            roundClass={roundClass}
             pick={pick}
             clearPick={(event) => this.clearPick(event)}
             postPickToRoster={(event) => this.postPickToRoster(event)}
@@ -285,7 +333,7 @@ class DraftBoard extends Component {
           {/*<button onClick={this.stopPolling}>stop</button>*/}
 
         </div>
-        <table className="draft-table">
+        <DraftTable className="draft-table">
           <thead>
           <tr>
             <th>
@@ -315,7 +363,7 @@ class DraftBoard extends Component {
           <tbody>
           {draftPicksEl}
           </tbody>
-        </table>
+        </DraftTable>
       </div>
     );
   }

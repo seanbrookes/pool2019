@@ -4,14 +4,14 @@ module.exports = function(app) {
   let roundNumber = 1;
 
   const loopCollection = [
+    "stallions",
     "rallycaps",
     "mashers",
     "bashers",
-    "stallions",
-    "stallions",
     "bashers",
     "mashers",
-    "rallycaps"
+    "rallycaps",
+    "stallions"
   ];
 
   const isEven = (n) => {
