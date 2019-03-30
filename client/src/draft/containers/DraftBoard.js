@@ -56,8 +56,8 @@ class DraftBoard extends Component {
         this.setCurrentPick();
       });
     }
-   this.startPolling();
-   this.props.onPollDraftPicks();
+  //  this.startPolling();
+  //  this.props.onPollDraftPicks();
     // start the polling
   }
   componentWillReceiveProps(nextProps) {
@@ -328,9 +328,9 @@ class DraftBoard extends Component {
 
           {currentPickEl}
           {pickTimerEl}
-{/* 
-          <button onClick={this.startPolling}>start</button>
-          <button onClick={this.stopPolling}>stop</button> */}
+
+           <button onClick={this.startPolling}>start</button>           
+           <button onClick={this.stopPolling}>stop</button>
 
         </div>
         <DraftTable className="draft-table">
