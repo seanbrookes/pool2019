@@ -165,16 +165,23 @@ class RosterProtectionList extends Component {
       this.props.roster.players.map((player, index) => {
         playerCollection.push(
           (
+            <React.Fragment>
             <tr key={index} className={this.getRowClass(player, index)} data-ui-type="row">
               <td>
                 <button className="SilentButton" onClick={() => {}}>{(index + 1)}</button>
               </td>
-              <td>
-                {player.name}
-                <div style={{display:'flex', fontSize: '12px'}}>
-                  <div>team:</div>
-                  <div>{player.team}</div>
+              <td colspan="2">
+                <div style={{display:'flex', flexWrap: 'nowrap', padding: '4px'}}>
+                  {player.name}
+                  <span style={{fontSize: '12px'}}>
+                    <div>{player.team}</div>
+                  </span>
                 </div>
+              </td>
+            </tr>
+            <tr key={index} className={this.getRowClass(player, index)} data-ui-type="row">
+              <td>
+
               </td>
               <td>
                 <PositionSelect
@@ -190,6 +197,7 @@ class RosterProtectionList extends Component {
                   mlbid={player.mlbid} />
               </td>
             </tr>
+            </React.Fragment>
           )
         )
       });
