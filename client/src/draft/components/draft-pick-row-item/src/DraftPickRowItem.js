@@ -43,23 +43,23 @@ class DraftPickRowItem extends Component {
     return (
       <tr className={rowClass.join(' ')}>
         <td className="DraftPickCell DraftPickCell__Round">
-          <button data-pickid={pick.id} onClick={this.props.postPickToRoster}>
+          {/* <button data-pickid={pick.id} onClick={this.props.postPickToRoster}>
           {pick.round}
-          </button>
-          {/* {pick.round} */}
+          </button> */}
+          {pick.round}
         </td>
         <td className="DraftPickCell DraftPickCell__PickNumber">
-          <button
+          {/* <button
             className="SilentButton"
             value={pick.id}
             onClick={this.props.clearPick}
           >
             {pick.pickNumber}
-          </button>
-          {/* {pick.pickNumber} */}
+          </button> */}
+          {pick.pickNumber}
         </td>
         <td className="DraftPickCell DraftPickCell__Roster">
-          <select
+          {/* <select
             onChange={this.props.updatePick}
             value={pick.slug}
             data-property="slug"
@@ -69,8 +69,8 @@ class DraftPickRowItem extends Component {
             <option value="mashers">mashers</option>
             <option value="rallycaps">rallycaps</option>
             <option value="stallions">stallions</option>
-          </select>
-          {/* {pick.slug} */}
+          </select> */}
+          {pick.slug}
         </td>
         <td className="DraftPickCell DraftPickCell__Name">
           <input
