@@ -99,8 +99,10 @@ class DraftBoard extends Component {
     targetPick.team = '';
     targetPick.timestamp = '';
     targetPick.pickTime = '';
-  //  this.props.onUpdateDraftPick(targetPick);
-    //console.log('| clear pick called ', targetPick.name);
+    if (confirm('clear pick?')) {
+      this.props.onUpdateDraftPick(targetPick);
+    }
+    console.log('| clear pick called ', targetPick.name);
   }
   postPickToRoster(event) {
     const targetPick = this.getPick(event.target.attributes['data-pickid'].value);
@@ -181,7 +183,7 @@ class DraftBoard extends Component {
         }
       });
 
-      console.log('SET last picks');
+   //   console.log('SET last picks');
       this.setState({
         currentPick,
         lastPick,
@@ -278,7 +280,6 @@ class DraftBoard extends Component {
       }
       roundCountIndex++;
 
-      console.log('|  index', index);
       if (roundCountIndex === 4) {
         if (roundClass === 'odd-round') {
           roundClass = 'even-round';
@@ -296,7 +297,6 @@ class DraftBoard extends Component {
     if (this.props.draftPicks) {
       this.props.draftPicks.map((pick, index) => {
         const roundClass = getRoundClass(index);
-        console.log('|  round class', roundClass);
         draftPicksEl.push(
           <DraftPickRowItem
             key={pick.id}
@@ -328,9 +328,9 @@ class DraftBoard extends Component {
 
           {currentPickEl}
           {pickTimerEl}
-
-          {/*<button onClick={this.startPolling}>start</button>*/}
-          {/*<button onClick={this.stopPolling}>stop</button>*/}
+{/* 
+          <button onClick={this.startPolling}>start</button>
+          <button onClick={this.stopPolling}>stop</button> */}
 
         </div>
         <DraftTable className="draft-table">

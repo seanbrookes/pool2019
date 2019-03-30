@@ -49,27 +49,27 @@ class DraftPickRowItem extends Component {
           {pick.round}
         </td>
         <td className="DraftPickCell DraftPickCell__PickNumber">
-          {/*<button*/}
-            {/*className="SilentButton"*/}
-            {/*value={pick.id}*/}
-            {/*onClick={this.props.clearPick}*/}
-          {/*>*/}
-            {/*{pick.pickNumber}*/}
-          {/*</button>*/}
+          {/* <button
+            className="SilentButton"
+            value={pick.id}
+            onClick={this.props.clearPick}
+          >
+            {pick.pickNumber}
+          </button> */}
           {pick.pickNumber}
         </td>
         <td className="DraftPickCell DraftPickCell__Roster">
-          {/*<select*/}
-            {/*onChange={this.props.updatePick}*/}
-            {/*value={pick.slug}*/}
-            {/*data-property="slug"*/}
-            {/*data-pickid={pick.id}*/}
-          {/*>*/}
-            {/*<option value="bashers">bashers</option>*/}
-            {/*<option value="mashers">mashers</option>*/}
-            {/*<option value="rallycaps">rallycaps</option>*/}
-            {/*<option value="stallions">stallions</option>*/}
-          {/*</select>*/}
+          {/* <select
+            onChange={this.props.updatePick}
+            value={pick.slug}
+            data-property="slug"
+            data-pickid={pick.id}
+          >
+            <option value="bashers">bashers</option>
+            <option value="mashers">mashers</option>
+            <option value="rallycaps">rallycaps</option>
+            <option value="stallions">stallions</option>
+          </select> */}
           {pick.slug}
         </td>
         <td className="DraftPickCell DraftPickCell__Name">
