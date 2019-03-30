@@ -22,7 +22,7 @@ class RosterListContainer extends Component {
     //   </div>
     // )
     return (
-      <div style={{display:'flex'}}>
+      <div style={{display:'flex', flexWrap: 'wrap'}}>
         <RosterProtectionList slug={'bashers'} />
         <RosterProtectionList slug={'mashers'} />
         <RosterProtectionList slug={'rallycaps'} />

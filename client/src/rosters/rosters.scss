@@ -73,6 +73,14 @@ table.PreDraftRosterTable {
   border-spacing: 0;
   margin-right: 1rem;
   border: 1px solid #dddddd;
+  min-width:20rem;
+  margin-bottom:10px;
+
+  caption {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 4px;
+  }
 }
 .PreDraftRosterTable tr.protected-row {
   background-color: #e2ffd8;
