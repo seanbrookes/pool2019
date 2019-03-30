@@ -364,6 +364,7 @@ class DraftBoard extends Component {
           {draftPicksEl}
           </tbody>
         </DraftTable>
+        <a href="https://hangouts.google.com/call/nluiVk6vNx981WoNmdGVAEEE" target="_blank">Draft Hangout</a>
       </div>
     );
   }

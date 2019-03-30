@@ -206,7 +206,7 @@ class RosterProtectionList extends Component {
 
     return (
       <div>
-        {/* <button value={this.props.roster.slug} onClick={this.deleteNonProtected}>delete players</button> */}
+        <button value={this.props.roster.slug} onClick={this.deleteNonProtected}>delete players</button>
       <table className="PreDraftRosterTable">
         <caption className="ng-binding">{this.props.roster.name}</caption>
         <tbody>
