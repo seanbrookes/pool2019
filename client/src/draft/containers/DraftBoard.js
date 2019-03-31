@@ -25,6 +25,9 @@ const DraftTable = styled.table`
     background-color: #cecece;
   }
 
+  .DraftPickCell {
+    padding:8px;
+  }
 
 `;
 
@@ -70,16 +73,16 @@ class DraftBoard extends Component {
     }
   }
   startPolling() {
-    let intervalId  = setInterval(() => {
-        setTimeout(() => {
-          console.log('|   poll for darn sakes');
-          this.props.onFetchDraftPicks();
-        }, 3);
-      },
-      15000);
-    this.setState({
-      intervalId: intervalId
-    });
+    // let intervalId  = setInterval(() => {
+    //     setTimeout(() => {
+    //       console.log('|   poll for darn sakes');
+    //       this.props.onFetchDraftPicks();
+    //     }, 3);
+    //   },
+    //   15000);
+    // this.setState({
+    //   intervalId: intervalId
+    // });
   }
   stopPolling() {
     clearInterval(this.state.intervalId);
@@ -329,8 +332,8 @@ class DraftBoard extends Component {
           {currentPickEl}
           {pickTimerEl}
 
-           <button onClick={this.startPolling}>start</button>           
-           <button onClick={this.stopPolling}>stop</button>
+           {/* <button onClick={this.startPolling}>start</button>           
+           <button onClick={this.stopPolling}>stop</button> */}
 
         </div>
         <DraftTable className="draft-table">

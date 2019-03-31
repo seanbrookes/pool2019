@@ -43,23 +43,23 @@ class DraftPickRowItem extends Component {
     return (
       <tr className={rowClass.join(' ')}>
         <td className="DraftPickCell DraftPickCell__Round">
-          <button data-pickid={pick.id} onClick={this.props.postPickToRoster}>
+          {/* <button data-pickid={pick.id} onClick={this.props.postPickToRoster}>
           {pick.round}
-          </button>
-          {/* {pick.round} */}
+          </button> */}
+          {pick.round}
         </td>
         <td className="DraftPickCell DraftPickCell__PickNumber">
-          <button
+          {/* <button
             className="SilentButton"
             value={pick.id}
             onClick={this.props.clearPick}
           >
             {pick.pickNumber}
-          </button>
-          {/* {pick.pickNumber} */}
+          </button> */}
+          {pick.pickNumber}
         </td>
         <td className="DraftPickCell DraftPickCell__Roster">
-          <select
+          {/* <select
             onChange={this.props.updatePick}
             value={pick.slug}
             data-property="slug"
@@ -69,22 +69,22 @@ class DraftPickRowItem extends Component {
             <option value="mashers">mashers</option>
             <option value="rallycaps">rallycaps</option>
             <option value="stallions">stallions</option>
-          </select>
-          {/* {pick.slug} */}
+          </select> */}
+          {pick.slug}
         </td>
         <td className="DraftPickCell DraftPickCell__Name">
-          <input
+          {/* <input
             className="draft-name-input"
             type="text"
             onBlur={this.props.persistPickPlayer}
             onChange={this.props.updatePickName}
             value={pick.name}
             data-pickid={pick.id}
-          />
-          {/* {pick.name} */}
+          /> */}
+          {pick.name}
         </td>
         <td className="DraftPickCell DraftPickCell__Pos">
-          <select
+          {/* <select
             data-pickid={pick.id}
             onChange={this.props.updatePick}
             className="select-pos pick-property-edit"
@@ -103,11 +103,11 @@ class DraftPickRowItem extends Component {
             <option value="DH">DH</option>
             <option value="SP">SP</option>
             <option value="RP">RP</option>
-          </select>
-          {/* {pick.pos} */}
+          </select> */}
+          {pick.pos}
         </td>
         <td className="DraftPickCell DraftPickCell__Team">
-          <select
+          {/* <select
             className="select-team pick-property-edit"
             onChange={this.props.updatePick}
             value={pick.team}
@@ -130,15 +130,15 @@ class DraftPickRowItem extends Component {
             <option value="TB">TB</option>
             <option value="TEX">TEX</option>
             <option value="TOR">TOR</option>
-          </select>
-          {/* {pick.team} */}
+          </select> */}
+          {pick.team}
         </td>
         <td>
           {pick.pickTime ? moment(pick.pickTime).format('mm:ss') : ''}
         </td>
         <td>
-          <button ng-click="editPick(pick)" ng-model="pick">edit</button>
-          <button ng-click="deletePick(pick)" ng-model="pick">delete</button>
+          {/* <button ng-click="editPick(pick)" ng-model="pick">edit</button>
+          <button ng-click="deletePick(pick)" ng-model="pick">delete</button> */}
         </td>
       </tr>
     );
