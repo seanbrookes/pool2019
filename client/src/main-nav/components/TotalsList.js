@@ -51,16 +51,30 @@ class TotalsList extends Component{
       let rallycapsDelta = 0;
       let stallionsDelta = 0;
       if (this.state.rosters.bashers && this.state.rosters.bashers.length > 0) {
-        bashersDelta = (this.state.rosters.bashers[0].grandTotal - this.state.rosters.bashers[1].grandTotal);
+        bashersDelta = (this.state.rosters.bashers[0].grandTotal - 0);
+        if (this.state.rosters.bashers[1]) {
+          bashersDelta = (this.state.rosters.bashers[0].grandTotal - this.state.rosters.bashers[1].grandTotal);
+        }
       }
       if (this.state.rosters.mashers && this.state.rosters.mashers.length > 0) {
-        mashersDelta = (this.state.rosters.mashers[0].grandTotal - this.state.rosters.mashers[1].grandTotal);
+        let mTotal = (this.state.rosters.mashers[0].grandTotal - 0);
+        if (this.state.rosters.mashers[1]) {
+          mTotal = (this.state.rosters.mashers[0].grandTotal - this.state.rosters.mashers[1].grandTotal);
+        }
+        mashersDelta = mTotal;
       }
-      if (this.state.rosters.rallycaps && this.state.rosters.rallycapslength > 0) {
-        rallycapsDelta = (this.state.rosters.rallycaps[0].grandTotal - this.state.rosters.rallycaps[1].grandTotal);
+      if (this.state.rosters.rallycaps && this.state.rosters.rallycaps.length > 0) {
+        rallycapsDelta = (this.state.rosters.rallycaps[0].grandTotal - 0);
+        if (this.state.rosters.rallycaps[1]) {
+          rallycapsDelta = (this.state.rosters.rallycaps[0].grandTotal - this.state.rosters.rallycaps[1].grandTotal);
+        }
       }
       if (this.state.rosters.stallions && this.state.rosters.stallions.length > 0) {
-        stallionsDelta = (this.state.rosters.stallions[0].grandTotal - this.state.rosters.stallions[1].grandTotal);
+        stallionsDelta = (this.state.rosters.stallions[0].grandTotal - 0);
+        if (this.state.rosters.stallions[1]) {
+          stallionsDelta = (this.state.rosters.stallions[0].grandTotal - this.state.rosters.stallions[1].grandTotal);
+
+        }
       }
       // sort the totals
       // get the first and second from each and subtract and get the delta

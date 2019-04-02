@@ -17,9 +17,10 @@ const createNewTotalsRecord = (totalsObj) => {
       'Content-Type': 'application/json'
     })
   };
-  //console.log('|  CREATE THE NEW TOTAL RECORD', totalsObj);
+  console.log('|  CREATE THE NEW TOTAL RECORD', totalsObj);
   fetch('api/totals', options)
     .then((response) => {
+      console.log('|  FETCH TOTAL RECORD');
       return response.json();
     })
     .then((data) => {
@@ -139,7 +140,12 @@ async function runTheStats(slug) {
   // latestTotals.map((latest) => {
   //   console.log('|   LATEST TOTAL: ', latest);
   // });
-  const latestGrandTotal = latestTotals[0].grandTotal;
+  let grandTotal = 0;
+  if (latestTotals && latestTotals[0] && latestTotals[0].grandTotal) {
+    grandTotal = latestTotals[0].grandTotal;
+  }
+
+  const latestGrandTotal = grandTotal;
   // - compare the current grandTotal with the latest record from totals
   // - if the new number is higher then create a new totals record    // - pull up the latest total records (api/totals)
 

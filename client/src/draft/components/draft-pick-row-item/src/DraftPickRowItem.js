@@ -43,10 +43,10 @@ class DraftPickRowItem extends Component {
     return (
       <tr className={rowClass.join(' ')}>
         <td className="DraftPickCell DraftPickCell__Round">
-          {/* <button data-pickid={pick.id} onClick={this.props.postPickToRoster}>
+          <button data-pickid={pick.id} onClick={this.props.postPickToRoster}>
           {pick.round}
-          </button> */}
-          {pick.round}
+          </button>
+          {/* {pick.round} */}
         </td>
         <td className="DraftPickCell DraftPickCell__PickNumber">
           {/* <button

@@ -13,22 +13,22 @@ class RosterListContainer extends Component {
 
   render() {
 
-    // return (
-    //   <div style={{display:'flex'}}>
-    //     <RosterListView slug={'bashers'} />
-    //     <RosterListView slug={'mashers'} />
-    //     <RosterListView slug={'rallycaps'} />
-    //     <RosterListView slug={'stallions'} />
-    //   </div>
-    // )
     return (
       <div style={{display:'flex', flexWrap: 'wrap'}}>
-        <RosterProtectionList slug={'bashers'} />
-        <RosterProtectionList slug={'mashers'} />
-        <RosterProtectionList slug={'rallycaps'} />
-        <RosterProtectionList slug={'stallions'} />
+        <RosterListView slug={'bashers'} />
+        <RosterListView slug={'mashers'} />
+        <RosterListView slug={'rallycaps'} />
+        <RosterListView slug={'stallions'} />
       </div>
-    );
+    )
+    // return (
+    //   <div style={{display:'flex', flexWrap: 'wrap'}}>
+    //     <RosterProtectionList slug={'bashers'} />
+    //     <RosterProtectionList slug={'mashers'} />
+    //     <RosterProtectionList slug={'rallycaps'} />
+    //     <RosterProtectionList slug={'stallions'} />
+    //   </div>
+    // );
   }
 }
 
