@@ -150,7 +150,8 @@ class EditRoster extends Component {
       const theRoster = this.state.currentRoster;
 
       const filteredPlayers = theRoster.players.filter((player) => {
-        return (player.mlbid !== targetPlayer.mlbid);
+        return (player.name !== '');
+       // return (player.mlbid !== targetPlayer.mlbid);
       });
 
       theRoster.players = filteredPlayers;

@@ -63,21 +63,8 @@ module.exports = function(Statupdate) {
 
         // isolate NL players if necessary
 
-        const NLHittersCollection = [
-          '572821',
-          '570731',
-          '467092',
-          '519058',
-          '592518'
-        ];
-        const NLPithersCollection = [
-          '502042',
-          '592332',
-          '458681',
-          '532077',
-          '457918',
-          '502154'
-        ];
+        const NLHittersCollection = [];
+        const NLPithersCollection = [];
 
         // get machado nl stats
         // const machadoNLStatsCollection = latestNLHittingStats.filter((player) => {
@@ -164,7 +151,15 @@ module.exports = function(Statupdate) {
 
               // legit player
               const rawPlayerCollection = latestALHittingStats.filter((stat) => {
-                return (stat.player_id === hitter.mlbid);
+                if (stat.player_id === hitter.mlbid) {
+                  // console.log('|');
+                  // console.log('|');
+                  // console.log('| match hitter', stat.name_display_first_last);
+                  // console.log('|');
+                  // console.log('|');
+                  return stat.player_id;
+                }
+
               });
               const rawPlayer = rawPlayerCollection[0];
               if (rawPlayer) {

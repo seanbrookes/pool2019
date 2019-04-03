@@ -230,19 +230,19 @@ class RosterListView extends Component {
                 </div>
               </td>
               <td>
-                <PositionSelect
+                {/* <PositionSelect
                   onChange={(event) => {this.updatePosition(event, player.name)}}
                   position={player.pos}
                   mlbid={player.mlbid}
-                /> 
-                {/* {player.pos} */}
+                />  */}
+                {player.pos}
               </td>
               <td>
-                <ProtectedStatusSelect
+                {/* <ProtectedStatusSelect
                   onChange={(event) => {this.updateProtectedStatus(event, player.name)}}
                   status={player.draftStatus}
-                  mlbid={player.mlbid} />
-                {/* {player.draftStatus} */}
+                  mlbid={player.mlbid} /> */}
+                {player.draftStatus}
               </td>
               <td>
                 {/* <select value={player.posType} onChange={(event) => {this.updatePositionType(event, player.name)}} >

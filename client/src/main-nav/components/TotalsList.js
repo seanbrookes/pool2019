@@ -88,7 +88,7 @@ class TotalsList extends Component{
       if (this.state.rosters.mashers && this.state.rosters.mashers.length > 0) {
         mashersGrandTotal = this.state.rosters.mashers[0].grandTotal;
       }
-      if (this.state.rosters.rallycaps && this.state.rosters.rallycapslength > 0) {
+      if (this.state.rosters.rallycaps && this.state.rosters.rallycaps.length > 0) {
         rallycapsGrandTotal = this.state.rosters.rallycaps[0].grandTotal;
       }
       if (this.state.rosters.stallions && this.state.rosters.stallions.length > 0) {
